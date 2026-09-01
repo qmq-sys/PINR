@@ -1,0 +1,13 @@
+subject,lambda_dis,holdout_improve,dti_stable,dti_improved,ok_holdout_and_stable
+106319,0.0,True,False,False,False
+106319,0.01,True,False,False,False
+106319,0.1,True,False,False,False
+120717,0.0,True,False,False,False
+120717,0.01,True,False,False,False
+120717,0.1,True,False,False,False
+121618,0.0,True,False,False,False
+121618,0.01,True,False,False,False
+121618,0.1,True,False,False,False
+116726,0.0,True,True,True,True
+116726,0.01,True,True,True,True
+116726,0.1,True,True,True,True

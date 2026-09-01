@@ -1,0 +1,4 @@
+lambda_dis,n_subjects,n_signal_improvement,n_signal_and_dti_stable,n_signal_and_dti_improved,n_signal_with_FA_degradation,n_over_regularized,mean_rel_D_drift_final,subjects_stable,subjects_improved,drift_vs_lambda0
+0.0,4,4,1,1,3,0,4.4530392341306815,['116726'],['116726'],0.0
+0.01,4,4,1,1,3,0,4.444853101833746,['116726'],['116726'],-0.008186132296935433
+0.1,4,4,1,1,3,0,4.44517757740509,['116726'],['116726'],-0.00786165672559136

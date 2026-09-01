@@ -1,0 +1,93 @@
+{
+  "arch_case": "Case1_architecture_OK_inference_objective_problem",
+  "signal_guided_final": {
+    "iteration": 1000,
+    "latent_norm": 0.36324456334114075,
+    "PSNR": -2.597134608204725,
+    "RelMSE": 3.6222925405770683,
+    "MSE": 1.8185006508234567,
+    "FA_MAE": 0.17999496941880141,
+    "MD_MAE": 0.00034149258412955076,
+    "AD_MAE": 0.00046831434616923954,
+    "RD_MAE": 0.00035583767846470826,
+    "mean_delta_D_fro": 0.0001810038215515872,
+    "mean_relative_delta_D": 0.5418812272000787,
+    "mean_delta_lambda1": -7.977928099143157e-06,
+    "mean_delta_lambda2": -6.262111968629314e-06,
+    "mean_delta_lambda3": -7.412844412136099e-06,
+    "mean_signed_delta_FA": -0.004513240263894343,
+    "mean_abs_delta_FA": 0.03289466140255342,
+    "mean_signed_delta_MD": -7.2176281599695236e-06,
+    "mean_abs_delta_MD": 8.64215107539114e-05,
+    "mean_D_fro_error_vs_wls": 0.0007932474663061984,
+    "mean_relative_D_error_vs_wls": 3196.466780907445,
+    "mean_abs_delta_lambda1_vs_wls": 0.00046831434679757314,
+    "mean_abs_delta_lambda2_vs_wls": 0.000352314400494973,
+    "mean_abs_delta_lambda3_vs_wls": 0.00037831608838408425,
+    "objective": "signal"
+  },
+  "dti_guided_final": {
+    "iteration": 1000,
+    "latent_norm": 1.1266764402389526,
+    "PSNR": -18.549147018249784,
+    "RelMSE": 142.62142209295655,
+    "MSE": 71.60027689428146,
+    "FA_MAE": 0.16399892760847987,
+    "MD_MAE": 0.00032809941634992295,
+    "AD_MAE": 0.0004058705267003642,
+    "RD_MAE": 0.0003506508490280854,
+    "mean_delta_D_fro": 0.0002340087636036256,
+    "mean_relative_delta_D": 4.404572147079302,
+    "mean_delta_lambda1": -3.966224463776876e-05,
+    "mean_delta_lambda2": -1.3803404275131233e-05,
+    "mean_delta_lambda3": -7.356337202279177e-06,
+    "mean_signed_delta_FA": 0.002649924924336504,
+    "mean_abs_delta_FA": 0.052668854621682054,
+    "mean_signed_delta_MD": -2.0273995371726388e-05,
+    "mean_abs_delta_MD": 0.00010092505350924155,
+    "mean_D_fro_error_vs_wls": 0.0007445807077974063,
+    "mean_relative_D_error_vs_wls": 3994.322040001047,
+    "mean_abs_delta_lambda1_vs_wls": 0.0004058705273044938,
+    "mean_abs_delta_lambda2_vs_wls": 0.0003474180739993453,
+    "mean_abs_delta_lambda3_vs_wls": 0.00037006787778117535,
+    "objective": "dti"
+  },
+  "comparison": {
+    "FA_MAE_signal": 0.17999496941880141,
+    "FA_MAE_dti": 0.16399892760847987,
+    "FA_gain_signal": -0.0065877154095076995,
+    "FA_gain_dti": 0.009408326400813849,
+    "PSNR_signal": -2.597134608204725,
+    "PSNR_dti": -18.549147018249784,
+    "D_fro_err_signal": 0.0007932474663061984,
+    "D_fro_err_dti": 0.0007445807077974063,
+    "D_err_drop_signal": -2.0483654824409825e-05,
+    "D_err_drop_dti": 2.8183103684382245e-05,
+    "latent_norm_signal": 0.36324456334114075,
+    "latent_norm_dti": 1.1266764402389526,
+    "mean_train_latent_norm": 0.682499756415685
+  },
+  "latent_geometry": {
+    "||z_signal||": 0.36324456334114075,
+    "||z_DTI||": 1.1266764402389526,
+    "train_norms": {
+      "101309": 0.8100023865699768,
+      "102715": 0.45507296919822693,
+      "103515": 0.7824239134788513
+    },
+    "nn_signal": {
+      "dist": 0.6353904604911804,
+      "subject": "101309"
+    },
+    "nn_dti": {
+      "dist": 0.9209158420562744,
+      "subject": "102715"
+    }
+  },
+  "flags": {
+    "dti_guided_improves_geometry": true,
+    "signal_guided_improves_geometry": false,
+    "signal_guided_improves_signal": true,
+    "dti_guided_still_improving_at_end": true
+  }
+}

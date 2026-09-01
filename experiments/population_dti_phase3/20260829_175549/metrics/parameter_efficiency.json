@@ -1,0 +1,9 @@
+{
+  "total_theta_parameters": 59143,
+  "subject_latent_parameters_train_table": 48,
+  "adaptable_parameter_count": 16,
+  "adaptation_parameter_ratio": 0.0002705307475102717,
+  "latent_dim": 16,
+  "n_train_subjects_in_table": 3,
+  "formula": "adaptation_parameter_ratio = adaptable_parameter_count / total_theta_parameter_count"
+}

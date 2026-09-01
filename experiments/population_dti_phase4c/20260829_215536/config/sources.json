@@ -1,0 +1,5 @@
+{
+  "theta": "E:\\BaiduNetdiskDownload\\Population-DTI-INR\\experiments\\population_dti_phase4a\\20260829_192714\\checkpoints\\epoch_0150\\theta.pt",
+  "latents": "E:\\BaiduNetdiskDownload\\Population-DTI-INR\\experiments\\population_dti_phase4a\\20260829_192714\\checkpoints\\epoch_0150\\latents.pt",
+  "z_new": "E:\\BaiduNetdiskDownload\\Population-DTI-INR\\experiments\\population_dti_phase4b\\20260829_201921\\checkpoints\\z_new.pt"
+}

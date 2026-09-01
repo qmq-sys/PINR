@@ -1,0 +1,12 @@
+mode: latent_adaptation
+subject_id: '106319'
+adapt_iterations:
+- 0
+- 10
+- 50
+- 100
+- 200
+adapt_lr: 0.001
+batch_voxels: 4096
+latent_dim: 16
+theta_frozen: true

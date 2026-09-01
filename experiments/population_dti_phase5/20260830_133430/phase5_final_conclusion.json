@@ -1,0 +1,33 @@
+{
+  "arch_case": "Case1_architecture_OK_inference_objective_problem",
+  "Q1_200_iters_insufficient": true,
+  "Q2_signal_only_has_signal_DTI_mismatch": true,
+  "Q3_latent_space_can_express_subject_DTI": true,
+  "Q4_if_capable_problem_is": "inference_objective_identifiability",
+  "Q5_if_not_capable_v2_should_address": "N/A — architecture appears capable under DTI-guided oracle; prioritize inference objective.",
+  "Go_NoGo_Population_DTI_INR_v1": "CONDITIONAL_GO — keep architecture; fix latent adaptation objective / protocol",
+  "evidence_for_v2": false,
+  "inconclusive": false,
+  "phase5a_case": "B_signal_DTI_objective_mismatch",
+  "phase5b_flags": {
+    "dti_guided_improves_geometry": true,
+    "signal_guided_improves_geometry": false,
+    "signal_guided_improves_signal": true,
+    "dti_guided_still_improving_at_end": true
+  },
+  "comparison_snapshot": {
+    "FA_MAE_signal": 0.17999496941880141,
+    "FA_MAE_dti": 0.16399892760847987,
+    "FA_gain_signal": -0.0065877154095076995,
+    "FA_gain_dti": 0.009408326400813849,
+    "PSNR_signal": -2.597134608204725,
+    "PSNR_dti": -18.549147018249784,
+    "D_fro_err_signal": 0.0007932474663061984,
+    "D_fro_err_dti": 0.0007445807077974063,
+    "D_err_drop_signal": -2.0483654824409825e-05,
+    "D_err_drop_dti": 2.8183103684382245e-05,
+    "latent_norm_signal": 0.36324456334114075,
+    "latent_norm_dti": 1.1266764402389526,
+    "mean_train_latent_norm": 0.682499756415685
+  }
+}

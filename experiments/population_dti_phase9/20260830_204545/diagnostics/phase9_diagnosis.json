@@ -1,0 +1,85 @@
+{
+  "by_lambda": [
+    {
+      "lambda_dis": 0.0,
+      "n_subjects": 4,
+      "n_signal_improvement": 4,
+      "n_signal_and_dti_stable": 1,
+      "n_signal_and_dti_improved": 1,
+      "n_signal_with_FA_degradation": 3,
+      "n_over_regularized": 0,
+      "mean_rel_D_drift_final": 4.4530392341306815,
+      "subjects_stable": [
+        "116726"
+      ],
+      "subjects_improved": [
+        "116726"
+      ],
+      "drift_vs_lambda0": 0.0
+    },
+    {
+      "lambda_dis": 0.01,
+      "n_subjects": 4,
+      "n_signal_improvement": 4,
+      "n_signal_and_dti_stable": 1,
+      "n_signal_and_dti_improved": 1,
+      "n_signal_with_FA_degradation": 3,
+      "n_over_regularized": 0,
+      "mean_rel_D_drift_final": 4.444853101833746,
+      "subjects_stable": [
+        "116726"
+      ],
+      "subjects_improved": [
+        "116726"
+      ],
+      "drift_vs_lambda0": -0.008186132296935433
+    },
+    {
+      "lambda_dis": 0.1,
+      "n_subjects": 4,
+      "n_signal_improvement": 4,
+      "n_signal_and_dti_stable": 1,
+      "n_signal_and_dti_improved": 1,
+      "n_signal_with_FA_degradation": 3,
+      "n_over_regularized": 0,
+      "mean_rel_D_drift_final": 4.44517757740509,
+      "subjects_stable": [
+        "116726"
+      ],
+      "subjects_improved": [
+        "116726"
+      ],
+      "drift_vs_lambda0": -0.00786165672559136
+    }
+  ],
+  "best_lambda": {
+    "lambda_dis": 0.01,
+    "n_subjects": 4,
+    "n_signal_improvement": 4,
+    "n_signal_and_dti_stable": 1,
+    "n_signal_and_dti_improved": 1,
+    "n_signal_with_FA_degradation": 3,
+    "n_over_regularized": 0,
+    "mean_rel_D_drift_final": 4.444853101833746,
+    "subjects_stable": [
+      "116726"
+    ],
+    "subjects_improved": [
+      "116726"
+    ],
+    "drift_vs_lambda0": -0.008186132296935433
+  },
+  "Q1_disentanglement_reduces_D_drift": false,
+  "Q2_FA_degradation_sync_reduced": false,
+  "Q3_signal_still_improves_holdout": true,
+  "Q4_exists_signal_holdout_FA_stable": true,
+  "Q5_reproducible_on_ge_3_of_4": false,
+  "Q6_lambda_01_and_01_consistent": true,
+  "Q7_failure_type": "latent_identifiability_adaptation_objective",
+  "Q8_decision": "NO_GO",
+  "mechanism": "persistent_signal_DTI_mismatch_under_disentanglement",
+  "baseline_lambda0_mismatch_count": 3,
+  "drift_lambda0": 4.4530392341306815,
+  "only_by_killing_signal": false,
+  "still_mismatch": true
+}

@@ -1,0 +1,46 @@
+{
+  "experiment": "population_dti_phase7/20260830_151400",
+  "theta": "Phase4-A epoch_0150",
+  "protocol": "observed/holdout signal-only latent adaptation; WLS evaluation-only",
+  "holdout_rule": "all b0 → observed; 50% of non-b0 volumes → holdout",
+  "Go_NoGo": "CONDITIONAL_GO",
+  "bottleneck": "latent_identifiability_adaptation_objective",
+  "evidence_for_v2_now": false,
+  "quantitative_evidence": {
+    "zeroshot_FA_MAE_mean": 0.1698,
+    "adapted_FA_MAE_mean": 0.1744,
+    "primary_106319_100pct": {
+      "observed_PSNR": {"z0": -16.23, "adapt1000": -5.53, "delta": 10.70},
+      "holdout_PSNR": {"z0": -10.93, "adapt1000": 0.79, "delta": 11.72},
+      "FA_MAE": {"z0": 0.1734, "adapt1000": 0.1795, "delta": 0.0061},
+      "latent_norm_final": 0.345,
+      "mean_delta_D_fro_vs_z0": 1.72e-4
+    },
+    "subjects_FA_delta_adapt_minus_z0": {
+      "106319": 0.0061,
+      "120717": 0.0097,
+      "121618": 0.0066,
+      "116726": -0.0038
+    },
+    "n_subjects_FA_worsens": 3,
+    "n_subjects_FA_mild_improve": 1,
+    "n_subjects_holdout_PSNR_improves": 3,
+    "n_subjects_holdout_PSNR_worsens": 0,
+    "sampling_FA_spread_25_50_100": 0.0039
+  },
+  "Q1_observed_signal_improves": true,
+  "Q2_holdout_signal_improves": true,
+  "Q3_signal_gain_with_FA_MD_gain": false,
+  "Q4_obs_up_holdout_down": false,
+  "Q5_z_up_Ddrift_up_DTI_worse": true,
+  "Q6_sampling_affects_adaptation": false,
+  "Q7_consistent_across_subjects": true,
+  "interpretation": {
+    "signal": "Adaptation improves both observed and holdout PSNR on most subjects → not simple observed overfitting.",
+    "dti": "FA/MD do not improve with signal-only adaptation on 3/4 subjects; usually worsen while ||z|| and ||ΔD|| grow.",
+    "exception": "116726 shows mild FA MAE drop (0.1567→0.1528) with weak signal gain — not enough for STRONG_GO.",
+    "vs_oracle": "Phase5/6 DTI-guided oracle already showed latent can move DTI; Phase7 shows signal-only objective does not select that direction under holdout protocol.",
+    "decision_logic": "Zero-shot reasonable + oracle capability + reproducible signal/DTI mismatch → CONDITIONAL_GO for continued v1 research on identifiability/objective; NO auto v2."
+  },
+  "next_step": "Keep PopulationDTIINR v1 frozen. Research unsupervised / signal-observable latent adaptation objectives that are identifiable for subject-specific DTI geometry. Do not treat WLS-mixed losses as formal test protocol."
+}

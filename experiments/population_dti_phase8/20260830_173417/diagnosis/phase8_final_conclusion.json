@@ -1,0 +1,169 @@
+{
+  "Go_NoGo": "CONDITIONAL_GO",
+  "answers": {
+    "1_signal_only_mismatch": true,
+    "2_angular_improves_mismatch": true,
+    "3_exists_simultaneous_objective": true,
+    "4_reproducible_3of4": false,
+    "5_sampling_dependent": false,
+    "6_z_norm_abnormal": false,
+    "7_D_drift_abnormal": false,
+    "8_worth_continuing": true,
+    "9_next_if_GO": "Keep architecture; focus on adaptation objective / early-stop / regularization. Do not jump to v2 yet.",
+    "10_failure_if_HOLD_NOGO": "N/A"
+  },
+  "best_objective_config": {
+    "objective": "angular",
+    "lambda_shape": 0.0,
+    "lambda_z": 0.0,
+    "n_evals": 8,
+    "n_win": 2,
+    "n_strong": 0,
+    "n_fail": 0,
+    "n_subjects_with_win": 1,
+    "subjects_with_win": [
+      "120717"
+    ]
+  },
+  "ranked_objectives": [
+    {
+      "objective": "angular",
+      "lambda_shape": 0.0,
+      "lambda_z": 0.0,
+      "n_evals": 8,
+      "n_win": 2,
+      "n_strong": 0,
+      "n_fail": 0,
+      "n_subjects_with_win": 1,
+      "subjects_with_win": [
+        "120717"
+      ]
+    },
+    {
+      "objective": "directional",
+      "lambda_shape": 0.0,
+      "lambda_z": 0.0,
+      "n_evals": 8,
+      "n_win": 2,
+      "n_strong": 0,
+      "n_fail": 0,
+      "n_subjects_with_win": 1,
+      "subjects_with_win": [
+        "116726"
+      ]
+    },
+    {
+      "objective": "signal",
+      "lambda_shape": 0.0,
+      "lambda_z": 0.0,
+      "n_evals": 8,
+      "n_win": 0,
+      "n_strong": 0,
+      "n_fail": 0,
+      "n_subjects_with_win": 0,
+      "subjects_with_win": []
+    },
+    {
+      "objective": "combined",
+      "lambda_shape": 0.01,
+      "lambda_z": 0.0,
+      "n_evals": 8,
+      "n_win": 0,
+      "n_strong": 0,
+      "n_fail": 0,
+      "n_subjects_with_win": 0,
+      "subjects_with_win": []
+    },
+    {
+      "objective": "combined",
+      "lambda_shape": 0.1,
+      "lambda_z": 0.0,
+      "n_evals": 8,
+      "n_win": 0,
+      "n_strong": 0,
+      "n_fail": 0,
+      "n_subjects_with_win": 0,
+      "subjects_with_win": []
+    },
+    {
+      "objective": "combined",
+      "lambda_shape": 1.0,
+      "lambda_z": 0.0,
+      "n_evals": 8,
+      "n_win": 0,
+      "n_strong": 0,
+      "n_fail": 0,
+      "n_subjects_with_win": 0,
+      "subjects_with_win": []
+    },
+    {
+      "objective": "combined",
+      "lambda_shape": 10.0,
+      "lambda_z": 0.0,
+      "n_evals": 8,
+      "n_win": 0,
+      "n_strong": 0,
+      "n_fail": 0,
+      "n_subjects_with_win": 0,
+      "subjects_with_win": []
+    },
+    {
+      "objective": "combined",
+      "lambda_shape": 10.0,
+      "lambda_z": 0.001,
+      "n_evals": 4,
+      "n_win": 0,
+      "n_strong": 0,
+      "n_fail": 0,
+      "n_subjects_with_win": 0,
+      "subjects_with_win": []
+    },
+    {
+      "objective": "combined",
+      "lambda_shape": 10.0,
+      "lambda_z": 0.01,
+      "n_evals": 4,
+      "n_win": 0,
+      "n_strong": 0,
+      "n_fail": 0,
+      "n_subjects_with_win": 0,
+      "subjects_with_win": []
+    },
+    {
+      "objective": "combined",
+      "lambda_shape": 10.0,
+      "lambda_z": 0.1,
+      "n_evals": 4,
+      "n_win": 0,
+      "n_strong": 0,
+      "n_fail": 0,
+      "n_subjects_with_win": 0,
+      "subjects_with_win": []
+    }
+  ],
+  "oracle_reference_phase5": {
+    "signal": {
+      "PSNR": -2.597134608204725,
+      "FA_MAE": 0.17999496941880141,
+      "latent_norm": 0.36324456334114075,
+      "D_frobenius_error_vs_wls": 0.0007932474663061984
+    },
+    "dti": {
+      "PSNR": -18.549147018249784,
+      "FA_MAE": 0.16399892760847987,
+      "latent_norm": 1.1266764402389526,
+      "D_frobenius_error_vs_wls": 0.0007445807077974063
+    }
+  },
+  "aggregates": {
+    "mean_z_norm_final": 0.5263748144110044,
+    "mean_delta_D_final": 0.00020392184690840658,
+    "mean_FA_z0": 0.1698025732877718,
+    "n_eval_with_holdout": 68,
+    "signal_fail_count": 6,
+    "angular_bestFA_improve_count": 4
+  },
+  "next_step": "Keep architecture; focus on adaptation objective / early-stop / regularization. Do not jump to v2 yet.",
+  "mechanism": "partial_identifiability_angular_helps_but_not_stable_3of4",
+  "experiment_dir": "E:\\BaiduNetdiskDownload\\Population-DTI-INR\\experiments\\population_dti_phase8\\20260830_173417"
+}

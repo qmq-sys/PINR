@@ -1,0 +1,57 @@
+{
+  "A_latent_significantly_changes_D": true,
+  "A_detail": {
+    "mean_relative_D_change_across_latents": 1.7226105517685215,
+    "max_relative_D_change": 3.3075102192137495,
+    "threshold_note": "significant if mean_rel>0.01 or max_rel>0.02"
+  },
+  "B_change_magnitude": {
+    "per_latent_relative_D_change": {
+      "z_101309": 3.3075102192137495,
+      "z_102715": 2.789147561356698,
+      "z_103515": 0.6307583998870189,
+      "z_new": 0.16302602661661963
+    },
+    "per_latent_mean_D_change_frobenius": {
+      "z_101309": 0.0003259247806174679,
+      "z_102715": 0.00014980981574192403,
+      "z_103515": 0.000350833313314045,
+      "z_new": 8.719623702609718e-05
+    },
+    "per_latent_mean_abs_delta_FA": {
+      "z_101309": 0.06209341494557025,
+      "z_102715": 0.031317701324445814,
+      "z_103515": 0.06075547972412047,
+      "z_new": 0.01572036121991295
+    }
+  },
+  "C_mainly_eigenvalue_magnitude_not_orientation": false,
+  "C_orientation_also_changes": true,
+  "C_detail": {
+    "mean_abs_cos_v1": 0.879253986600139,
+    "mean_relative_eigenvalue_change": 1.715006821098119,
+    "interpretation": "high |cos v1| (~1) => principal direction stable; relative_D / relative_eig quantify magnitude change"
+  },
+  "D_z_new_sensitivity_differs_from_train": true,
+  "D_detail": {
+    "z_new_relative_D_change": 0.16302602661661963,
+    "train_mean_relative_D_change": 2.242472060152489
+  },
+  "E_supports_phase4b_weak_DTI_control": false,
+  "answers": {
+    "A": "YES — latent induces measurable D(x,z) change",
+    "B": {
+      "mean_relative_Frobenius_change": 1.7226105517685215,
+      "max_relative_Frobenius_change": 3.3075102192137495,
+      "per_latent": {
+        "z_101309": 3.3075102192137495,
+        "z_102715": 2.789147561356698,
+        "z_103515": 0.6307583998870189,
+        "z_new": 0.16302602661661963
+      }
+    },
+    "C": "MIXED — both magnitude and orientation shift",
+    "D": "YES — z_new D-sensitivity differs from train latents",
+    "E": "NO — D-field changes are large enough to challenge that claim"
+  }
+}

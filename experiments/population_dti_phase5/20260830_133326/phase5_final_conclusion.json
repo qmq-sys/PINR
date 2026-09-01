@@ -1,0 +1,32 @@
+{
+  "arch_case": "Case2_or_inconclusive_need_more_budget",
+  "Q1_200_iters_insufficient": false,
+  "Q2_signal_only_has_signal_DTI_mismatch": true,
+  "Q3_latent_space_can_express_subject_DTI": false,
+  "Q4_if_capable_problem_is": "architecture_or_inconclusive",
+  "Q5_if_not_capable_v2_should_address": "Increase subject-specific DTI expressivity of latent pathway (e.g. D_pop(x)+ΔD(x,z) or stronger z→D coupling); not just longer signal adapt.",
+  "Go_NoGo_Population_DTI_INR_v1": "NO-GO for v1 inference story — evidence for architecture limit; consider v2",
+  "evidence_for_v2": true,
+  "phase5a_case": "B_signal_DTI_objective_mismatch",
+  "phase5b_flags": {
+    "dti_guided_improves_geometry": false,
+    "signal_guided_improves_geometry": false,
+    "signal_guided_improves_signal": false,
+    "dti_guided_still_improving_at_end": true
+  },
+  "comparison_snapshot": {
+    "FA_MAE_signal": 0.17345514498388515,
+    "FA_MAE_dti": 0.17312678429221975,
+    "FA_gain_signal": -4.789097459143021e-05,
+    "FA_gain_dti": 0.0002804697170739612,
+    "PSNR_signal": -14.640239564705148,
+    "PSNR_dti": -14.84886198032948,
+    "D_fro_err_signal": 0.0007730804355042897,
+    "D_fro_err_dti": 0.0007715199364292003,
+    "D_err_drop_signal": -3.166240225011951e-07,
+    "D_err_drop_dti": 1.2438750525882794e-06,
+    "latent_norm_signal": 0.01375515852123499,
+    "latent_norm_dti": 0.027401648461818695,
+    "mean_train_latent_norm": 0.682499756415685
+  }
+}

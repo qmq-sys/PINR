@@ -1,0 +1,83 @@
+{
+  "experiment": "population_dti_phase6/20260830_141502",
+  "theta": "Phase4-A epoch_0150",
+  "subject": "106319",
+  "L_adapt": "L_signal + lambda_DTI * (L_DTI / dti_ref_scale) + lambda_z * ||z||^2",
+  "L_DTI": "mean ||D_pred - D_WLS||_F (oracle diagnostic only)",
+  "dti_ref_scale": 0.0007727638,
+  "note_scale": "Raw L_DTI ~7.7e-4 makes user lambdas inert without /dti_ref_scale. Even after scaling, signal gradients dominate until lambda_DTI >= ~5000.",
+  "anchors": {
+    "z0": {"PSNR": -14.721, "FA_MAE": 0.1734, "D_err": 7.728e-4, "z_norm": 0.0},
+    "phase5_signal": {"PSNR": -2.597, "FA_MAE": 0.1800, "D_err": 7.932e-4, "z_norm": 0.363},
+    "phase5_dti_oracle": {"PSNR": -18.549, "FA_MAE": 0.1640, "D_err": 7.446e-4, "z_norm": 1.127}
+  },
+  "phase6a_user_lambda_final": [
+    {"lambda_DTI": 0.0, "PSNR": -1.594, "FA_MAE": 0.1803, "z_norm": 0.397, "D_err": 7.941e-4},
+    {"lambda_DTI": 0.001, "PSNR": -1.594, "FA_MAE": 0.1803, "z_norm": 0.397, "D_err": 7.941e-4},
+    {"lambda_DTI": 0.01, "PSNR": -1.594, "FA_MAE": 0.1803, "z_norm": 0.397, "D_err": 7.941e-4},
+    {"lambda_DTI": 0.1, "PSNR": -1.596, "FA_MAE": 0.1803, "z_norm": 0.397, "D_err": 7.941e-4},
+    {"lambda_DTI": 1.0, "PSNR": -1.620, "FA_MAE": 0.1803, "z_norm": 0.397, "D_err": 7.941e-4},
+    {"lambda_DTI": 10.0, "PSNR": -0.531, "FA_MAE": 0.1809, "z_norm": 0.411, "D_err": 7.957e-4}
+  ],
+  "phase6a_high_lambda_final": [
+    {"lambda_DTI": 50.0, "PSNR": -1.294, "FA_MAE": 0.1805, "z_norm": 0.404, "D_err": 7.942e-4},
+    {"lambda_DTI": 100.0, "PSNR": -3.206, "FA_MAE": 0.1797, "z_norm": 0.381, "D_err": 7.912e-4},
+    {"lambda_DTI": 500.0, "PSNR": -4.770, "FA_MAE": 0.1796, "z_norm": 0.384, "D_err": 7.884e-4},
+    {"lambda_DTI": 1000.0, "PSNR": -7.405, "FA_MAE": 0.1792, "z_norm": 0.387, "D_err": 7.847e-4},
+    {"lambda_DTI": 5000.0, "PSNR": -15.768, "FA_MAE": 0.1708, "z_norm": 0.569, "D_err": 7.522e-4},
+    {"lambda_DTI": 10000.0, "PSNR": -15.926, "FA_MAE": 0.1704, "z_norm": 0.732, "D_err": 7.485e-4}
+  ],
+  "Q1_mixed_relieves_conflict": {
+    "answer": false,
+    "detail": "User λ∈[0,10] remains signal-dominated (FA worsens like Phase5-A). Only λ≳5000 improves FA/D_err, but then PSNR collapses below z=0. Soft mixing does not yield a useful middle ground vs z=0."
+  },
+  "Q2_exists_lambda_both_better_than_z0": {
+    "answer": false,
+    "detail": "No tested (λ_DTI, λ_z) simultaneously achieves PSNR>z0 and FA_MAE<z0."
+  },
+  "Q3_phase5_dti_z_runaway": {
+    "answer": "mild_yes",
+    "z_DTI": 1.127,
+    "mean_train_norm": 0.682,
+    "ratio": 1.65,
+    "detail": "Exceeds 1.5× train mean. High-λ mixed optima land at ||z||≈0.57–0.73 (near train scale), so pure DTI-oracle runaway is partly objective-driven, not strictly required for modest FA gains."
+  },
+  "Q4_norm_reg_helps": {
+    "answer": false,
+    "detail": "On user λ grid, λ_z has negligible effect. On FA-improving high λ (5e3/1e4), λ_z∈{0.01,0.1,1} barely changes ||z||/PSNR/FA — does not restore signal while keeping DTI gains."
+  },
+  "Q5_pareto_compromise": {
+    "tradeoff_curve_exists": true,
+    "useful_compromise_vs_z0": false,
+    "detail": "Clear PSNR↔FA trade-off along λ. No point dominates z=0 on both metrics. Continue v1; next research unsupervised/signal-observable identifiable adaptation (not WLS-mixed formal protocol)."
+  },
+  "Q6_discuss_v2_now": {
+    "answer": false,
+    "detail": "Oracle still shows DTI capability (Phase5-B / high-λ). Failure is objective/identifiability under signal+WLS mixing, not proven architecture incapability. Do not enter v2 yet."
+  },
+  "Go_NoGo_Population_DTI_INR_v1": "HOLD_v1 — keep architecture; mixed WLS objective is diagnostic-only and does not yield simultaneous signal+DTI win vs z=0; next: unsupervised / signal-observable adaptation research. NO immediate v2.",
+  "evidence_for_v2": false,
+  "artifacts": {
+    "metrics": [
+      "metrics/lambda_sweep.csv",
+      "metrics/lambda_sweep_final.csv",
+      "metrics/lambda_sweep_high.csv",
+      "metrics/norm_regularization.csv",
+      "metrics/norm_regularization_final.csv",
+      "metrics/norm_regularization_high.csv",
+      "metrics/pareto_points.csv"
+    ],
+    "plots": [
+      "plots/lambda_vs_PSNR.png",
+      "plots/lambda_vs_FA_MAE.png",
+      "plots/lambda_vs_D_error.png",
+      "plots/lambda_vs_z_norm.png",
+      "plots/pareto_PSNR_vs_FA.png",
+      "plots/pareto_full_PSNR_FA.png",
+      "plots/pareto_analysis.png",
+      "plots/phase6a_trajectories.png",
+      "plots/norm_regularization_grid.png"
+    ],
+    "diagnosis": ["phase6_diagnosis.json", "phase6_final_conclusion.json"]
+  }
+}

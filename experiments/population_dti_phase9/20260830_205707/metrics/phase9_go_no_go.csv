@@ -1,0 +1,4 @@
+subject,lambda_dis,holdout_improve,dti_stable,dti_improved,ok_holdout_and_stable
+106319,0.0,False,True,True,False
+106319,0.01,False,True,True,False
+106319,0.1,False,True,True,False

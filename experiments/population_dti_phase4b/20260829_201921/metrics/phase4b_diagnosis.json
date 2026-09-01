@@ -1,0 +1,87 @@
+{
+  "A_latent_magnitude_mainly_affects_signal": true,
+  "A_detail": {
+    "psnr_alpha0": -14.721499063347508,
+    "psnr_alpha1": -12.840207389477419,
+    "psnr_range": 3.844089893365691
+  },
+  "B_latent_magnitude_changes_FA_MD": false,
+  "B_detail": {
+    "fa_alpha0": 0.17340725400929372,
+    "fa_alpha1": 0.17600725507768133,
+    "fa_range": 0.004031289822736067,
+    "md_range": 5.555244505657932e-06
+  },
+  "C_latent_interpolation_smooth": true,
+  "D_adapted_latent_near_train_distribution": true,
+  "D_detail": {
+    "train_l2_norms": {
+      "z_101309": 0.8100023865699768,
+      "z_102715": 0.45507296919822693,
+      "z_103515": 0.7824238538742065
+    },
+    "z_new_l2_norm": 0.15938934683799744,
+    "train_mean_l2": 0.6824997365474701,
+    "train_std_l2": 0.16120865308993806
+  },
+  "E_latent_replacement_on_unseen": {
+    "z=0": {
+      "psnr": -14.721499063347508,
+      "fa_mae": 0.17340725400929372,
+      "signal_relmse": 59.07720864650867
+    },
+    "z_101309": {
+      "psnr": 3.3606912215042417,
+      "fa_mae": 0.19313639056670862,
+      "signal_relmse": 0.918757587189714
+    },
+    "z_102715": {
+      "psnr": -16.25931412331714,
+      "fa_mae": 0.16813006197136143,
+      "signal_relmse": 84.17855628152111
+    },
+    "z_103515": {
+      "psnr": -10.907674147414,
+      "fa_mae": 0.18216048112090438,
+      "signal_relmse": 24.54920742641196
+    },
+    "z_new_adapted": {
+      "psnr": -12.840207389477419,
+      "fa_mae": 0.17600725507768133,
+      "signal_relmse": 38.30811651367358
+    }
+  },
+  "answers": {
+    "A": "YES — latent magnitude strongly modulates signal",
+    "B": "NO — FA/MD largely insensitive to latent magnitude",
+    "C": "YES — interpolation of representation stats is roughly smooth",
+    "D": "YES — ||z_new|| lies near training latent norms",
+    "E": {
+      "z=0": {
+        "psnr": -14.721499063347508,
+        "fa_mae": 0.17340725400929372,
+        "signal_relmse": 59.07720864650867
+      },
+      "z_101309": {
+        "psnr": 3.3606912215042417,
+        "fa_mae": 0.19313639056670862,
+        "signal_relmse": 0.918757587189714
+      },
+      "z_102715": {
+        "psnr": -16.25931412331714,
+        "fa_mae": 0.16813006197136143,
+        "signal_relmse": 84.17855628152111
+      },
+      "z_103515": {
+        "psnr": -10.907674147414,
+        "fa_mae": 0.18216048112090438,
+        "signal_relmse": 24.54920742641196
+      },
+      "z_new_adapted": {
+        "psnr": -12.840207389477419,
+        "fa_mae": 0.17600725507768133,
+        "signal_relmse": 38.30811651367358
+      }
+    }
+  }
+}

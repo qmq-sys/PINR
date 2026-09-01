@@ -1,0 +1,39 @@
+{
+  "1_signal_only_still_mismatch": true,
+  "2_angular_improves_mismatch": true,
+  "3_exists_obj_improves_holdout_and_DTI": true,
+  "4_reproducible_on_ge_3_of_4_subjects": false,
+  "5_depends_on_sampling_ratio": true,
+  "6_z_norm_abnormal": false,
+  "7_abnormal_D_drift": false,
+  "8_worth_continuing": true,
+  "9_if_GO_next_direction": "N/A",
+  "10_if_HOLD_NOGO_failure_mechanism": "Partial improvement from angular/combined objectives; not yet ≥3/4 reproducible WIN.",
+  "Go_NoGo": "CONDITIONAL_GO",
+  "best_config": "angular|r=0.25|λs=0.0|λz=0.0",
+  "oracle_ref": {
+    "phase5_signal": {
+      "PSNR": -2.597134608204725,
+      "FA_MAE": 0.17999496941880141,
+      "latent_norm": 0.36324456334114075
+    },
+    "phase5_dti_oracle": {
+      "PSNR": -18.549147018249784,
+      "FA_MAE": 0.16399892760847987,
+      "latent_norm": 1.1266764402389526
+    },
+    "note": "Oracle is diagnostic upper bound only — not formal unseen inference."
+  },
+  "signal_50pct_statuses": {
+    "106319": "FAIL",
+    "120717": "FAIL",
+    "121618": "FAIL",
+    "116726": "MIXED"
+  },
+  "angular_50pct_statuses": {
+    "106319": "MIXED",
+    "120717": "WIN",
+    "121618": "MIXED",
+    "116726": "MIXED"
+  }
+}

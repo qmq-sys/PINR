@@ -1,0 +1,252 @@
+{
+  "Q1_mixed_objective_relieves_conflict": false,
+  "Q2_exists_lambda_both_better_than_z0": false,
+  "Q2_both_better_configs": [],
+  "Q3_phase5_dti_z_is_runaway": true,
+  "Q3_detail": {
+    "z_DTI": 1.1266764402389526,
+    "mean_train_norm": 0.682499756415685,
+    "threshold_1p5x_train": 1.0237496346235275
+  },
+  "Q4_norm_regularization_helps": false,
+  "Q4_detail": {
+    "mean_z_with_reg": 0.49541046818097434,
+    "mean_z_without_reg": 0.496184903383255,
+    "best_with_reg": {
+      "lambda_DTI": 0.1,
+      "lambda_z": 0.001,
+      "PSNR": -1.5955858581419284,
+      "FA_MAE": 0.1802950725097283,
+      "latent_norm": 0.397220641374588
+    },
+    "best_without_reg": {
+      "lambda_DTI": 0.1,
+      "lambda_z": 0.0,
+      "PSNR": -1.595542466201215,
+      "FA_MAE": 0.18029509281262918,
+      "latent_norm": 0.3972221314907074
+    }
+  },
+  "Q5_pareto_compromise_exists": true,
+  "Q6_discuss_v2_now": false,
+  "best_compromise": {
+    "tag": "lambdaDTI=10.0",
+    "lambda_DTI": 10.0,
+    "lambda_z": 0.0,
+    "PSNR": -0.531208245910619,
+    "FA_MAE": 0.18085249660178682,
+    "MD_MAE": 0.00034331206107436233,
+    "mean_D_fro_error_vs_wls": 0.0007957298436524536,
+    "latent_norm": 0.41065534949302673,
+    "score": 0.8466261572801679
+  },
+  "references": {
+    "z0": {
+      "PSNR": -14.721499063347508,
+      "FA_MAE": 0.17340725400929372,
+      "MD_MAE": 0.00033228888092181474,
+      "mean_D_fro_error_vs_wls": 0.0007727638114817885,
+      "latent_norm": 0.0,
+      "RelMSE": 59.07720864650867
+    },
+    "phase5_signal": {
+      "PSNR": -2.597134608204725,
+      "FA_MAE": 0.17999496941880141,
+      "MD_MAE": 0.00034149258412955076,
+      "mean_D_fro_error_vs_wls": 0.0007932474663061984,
+      "latent_norm": 0.36324456334114075,
+      "RelMSE": 3.6222925405770683
+    },
+    "phase5_dti_oracle": {
+      "PSNR": -18.549147018249784,
+      "FA_MAE": 0.16399892760847987,
+      "MD_MAE": 0.00032809941634992295,
+      "mean_D_fro_error_vs_wls": 0.0007445807077974063,
+      "latent_norm": 1.1266764402389526,
+      "RelMSE": 142.62142209295655
+    }
+  },
+  "pareto_frontier_names": [
+    "λD=0.0_λz=0.0",
+    "λD=0.001_λz=0.0",
+    "λD=0.01_λz=0.0",
+    "λD=0.1_λz=0.0",
+    "λD=1.0_λz=0.0",
+    "λD=10.0_λz=0.0",
+    "λD=50.0_λz=0.0",
+    "λD=100.0_λz=0.0",
+    "λD=500.0_λz=0.0",
+    "λD=1000.0_λz=0.0",
+    "λD=5000.0_λz=0.0",
+    "λD=10000.0_λz=0.0",
+    "λD=0.01_λz=0.0",
+    "λD=0.01_λz=0.001",
+    "λD=0.01_λz=0.01",
+    "λD=0.01_λz=0.1",
+    "λD=0.1_λz=0.0",
+    "λD=0.1_λz=0.001",
+    "λD=0.1_λz=0.01",
+    "λD=0.1_λz=0.1",
+    "λD=1.0_λz=0.0",
+    "λD=1.0_λz=0.001",
+    "λD=1.0_λz=0.01",
+    "λD=1.0_λz=0.1",
+    "λD=1000.0_λz=0.0",
+    "λD=1000.0_λz=0.01",
+    "λD=1000.0_λz=0.1",
+    "λD=1000.0_λz=1.0",
+    "λD=5000.0_λz=0.0",
+    "λD=5000.0_λz=0.1",
+    "λD=5000.0_λz=1.0",
+    "λD=10000.0_λz=0.0",
+    "λD=10000.0_λz=0.01",
+    "λD=10000.0_λz=0.1",
+    "λD=10000.0_λz=1.0"
+  ],
+  "pareto_points": [
+    {
+      "name": "z0",
+      "PSNR": -14.721499063347508,
+      "FA_MAE": 0.17340725400929372,
+      "MD_MAE": 0.00033228888092181474,
+      "mean_D_fro_error_vs_wls": 0.0007727638114817885,
+      "latent_norm": 0.0,
+      "RelMSE": 59.07720864650867
+    },
+    {
+      "name": "phase5_signal",
+      "PSNR": -2.597134608204725,
+      "FA_MAE": 0.17999496941880141,
+      "MD_MAE": 0.00034149258412955076,
+      "mean_D_fro_error_vs_wls": 0.0007932474663061984,
+      "latent_norm": 0.36324456334114075,
+      "RelMSE": 3.6222925405770683
+    },
+    {
+      "name": "phase5_dti_oracle",
+      "PSNR": -18.549147018249784,
+      "FA_MAE": 0.16399892760847987,
+      "MD_MAE": 0.00032809941634992295,
+      "mean_D_fro_error_vs_wls": 0.0007445807077974063,
+      "latent_norm": 1.1266764402389526,
+      "RelMSE": 142.62142209295655
+    },
+    {
+      "name": "phase6_best_compromise",
+      "PSNR": -0.531208245910619,
+      "FA_MAE": 0.18085249660178682,
+      "mean_D_fro_error_vs_wls": 0.0007957298436524536,
+      "latent_norm": 0.41065534949302673,
+      "lambda_DTI": 10.0,
+      "lambda_z": 0.0
+    }
+  ],
+  "scale_warnings": [
+    "λ=0.001: weighted_DTI / L_signal ≈ 1.903e-03 (DTI term may be weak)",
+    "λ=0.01: weighted_DTI / L_signal ≈ 1.903e-02",
+    "λ=0.1: weighted_DTI / L_signal ≈ 1.902e-01",
+    "λ=1.0: weighted_DTI / L_signal ≈ 1.899e+00",
+    "λ=10.0: weighted_DTI / L_signal ≈ 2.004e+01",
+    "λ=50.0: weighted_DTI / L_signal ≈ 9.709e+01",
+    "λ=100.0: weighted_DTI / L_signal ≈ 1.788e+02",
+    "λ=500.0: weighted_DTI / L_signal ≈ 8.767e+02",
+    "λ=1000.0: weighted_DTI / L_signal ≈ 1.591e+03",
+    "λ=5000.0: weighted_DTI / L_signal ≈ 1.061e+03",
+    "λ=10000.0: weighted_DTI / L_signal ≈ 2.073e+03"
+  ],
+  "Go_NoGo": "HOLD_v1 — mixed objective did not yield simultaneous signal+DTI gain vs z=0; oracle still shows DTI capability → prioritize unsupervised/identifiable adaptation, not immediate architecture v2",
+  "evidence_for_v2": false,
+  "next_step": "Keep v1 architecture. Research unsupervised / signal-observable adaptation objectives that improve DTI without WLS oracle. Use Phase6 Pareto points as diagnostics only.",
+  "high_lambda_FA_improving_configs": [
+    {
+      "tag": "lambdaDTI=5000.0",
+      "lambda_DTI": 5000.0,
+      "lambda_z": 0.0,
+      "PSNR": -15.768066497099761,
+      "FA_MAE": 0.17081468796674626,
+      "latent_norm": 0.5685029029846191,
+      "D_err": 0.000752204909072519
+    },
+    {
+      "tag": "lambdaDTI=10000.0",
+      "lambda_DTI": 10000.0,
+      "lambda_z": 0.0,
+      "PSNR": -15.926102854037435,
+      "FA_MAE": 0.1704221036915057,
+      "latent_norm": 0.7316470742225647,
+      "D_err": 0.0007485165461589994
+    },
+    {
+      "tag": "lambdaDTI=5000.0_lambdaz=0.0",
+      "lambda_DTI": 5000.0,
+      "lambda_z": 0.0,
+      "PSNR": -15.768066497099761,
+      "FA_MAE": 0.17081468796674626,
+      "latent_norm": 0.5685029029846191,
+      "D_err": 0.000752204909072519
+    },
+    {
+      "tag": "lambdaDTI=5000.0_lambdaz=0.01",
+      "lambda_DTI": 5000.0,
+      "lambda_z": 0.01,
+      "PSNR": -15.76821954431975,
+      "FA_MAE": 0.17081470073959185,
+      "latent_norm": 0.5683706998825073,
+      "D_err": 0.0007522068349854444
+    },
+    {
+      "tag": "lambdaDTI=5000.0_lambdaz=0.1",
+      "lambda_DTI": 5000.0,
+      "lambda_z": 0.1,
+      "PSNR": -15.768256438144672,
+      "FA_MAE": 0.1708138163722075,
+      "latent_norm": 0.5681623816490173,
+      "D_err": 0.0007522076439548642
+    },
+    {
+      "tag": "lambdaDTI=5000.0_lambdaz=1.0",
+      "lambda_DTI": 5000.0,
+      "lambda_z": 1.0,
+      "PSNR": -15.758200928900816,
+      "FA_MAE": 0.1708619776149032,
+      "latent_norm": 0.56305330991745,
+      "D_err": 0.0007523282558877877
+    },
+    {
+      "tag": "lambdaDTI=10000.0_lambdaz=0.0",
+      "lambda_DTI": 10000.0,
+      "lambda_z": 0.0,
+      "PSNR": -15.926102854037435,
+      "FA_MAE": 0.1704221036915057,
+      "latent_norm": 0.7316470742225647,
+      "D_err": 0.0007485165461589994
+    },
+    {
+      "tag": "lambdaDTI=10000.0_lambdaz=0.01",
+      "lambda_DTI": 10000.0,
+      "lambda_z": 0.01,
+      "PSNR": -15.918974147407019,
+      "FA_MAE": 0.17043948535370596,
+      "latent_norm": 0.7311383485794067,
+      "D_err": 0.0007485319897764687
+    },
+    {
+      "tag": "lambdaDTI=10000.0_lambdaz=0.1",
+      "lambda_DTI": 10000.0,
+      "lambda_z": 0.1,
+      "PSNR": -15.925617683539265,
+      "FA_MAE": 0.1704227262591407,
+      "latent_norm": 0.7315025925636292,
+      "D_err": 0.0007485165267568341
+    },
+    {
+      "tag": "lambdaDTI=10000.0_lambdaz=1.0",
+      "lambda_DTI": 10000.0,
+      "lambda_z": 1.0,
+      "PSNR": -15.918977487061582,
+      "FA_MAE": 0.17043821068892037,
+      "latent_norm": 0.7287130355834961,
+      "D_err": 0.0007485384621555298
+    }
+  ]
+}

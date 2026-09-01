@@ -1,0 +1,351 @@
+{
+  "signal_only_mismatch": true,
+  "angular_helps_vs_signal": true,
+  "exists_objective_with_3of4_WIN": false,
+  "best_config": "angular|r=0.25|λs=0.0|λz=0.0",
+  "best_WIN_count": 1,
+  "go_detail": {
+    "angular|r=0.25|λs=0.0|λz=0.0": {
+      "n": 4,
+      "n_WIN": 1,
+      "n_FAIL": 0,
+      "n_signal_success": 1,
+      "n_fa_not_worse": 2,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "MIXED",
+        "120717": "WIN",
+        "121618": "MIXED",
+        "116726": "MIXED"
+      }
+    },
+    "angular|r=0.5|λs=0.0|λz=0.0": {
+      "n": 4,
+      "n_WIN": 1,
+      "n_FAIL": 0,
+      "n_signal_success": 1,
+      "n_fa_not_worse": 2,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "MIXED",
+        "120717": "WIN",
+        "121618": "MIXED",
+        "116726": "MIXED"
+      }
+    },
+    "angular|r=1.0|λs=0.0|λz=0.0": {
+      "n": 4,
+      "n_WIN": 1,
+      "n_FAIL": 0,
+      "n_signal_success": 1,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "MIXED",
+        "120717": "WIN",
+        "121618": "MIXED",
+        "116726": "MIXED"
+      }
+    },
+    "combined|r=0.5|λs=0.0|λz=0.0": {
+      "n": 4,
+      "n_WIN": 0,
+      "n_FAIL": 3,
+      "n_signal_success": 3,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "FAIL",
+        "120717": "FAIL",
+        "121618": "FAIL",
+        "116726": "MIXED"
+      }
+    },
+    "combined|r=0.5|λs=0.0|λz=0.001": {
+      "n": 4,
+      "n_WIN": 0,
+      "n_FAIL": 3,
+      "n_signal_success": 3,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "FAIL",
+        "120717": "FAIL",
+        "121618": "FAIL",
+        "116726": "MIXED"
+      }
+    },
+    "combined|r=0.5|λs=0.0|λz=0.01": {
+      "n": 4,
+      "n_WIN": 0,
+      "n_FAIL": 3,
+      "n_signal_success": 3,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "FAIL",
+        "120717": "FAIL",
+        "121618": "FAIL",
+        "116726": "MIXED"
+      }
+    },
+    "combined|r=0.5|λs=0.0|λz=0.1": {
+      "n": 4,
+      "n_WIN": 0,
+      "n_FAIL": 3,
+      "n_signal_success": 3,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "FAIL",
+        "120717": "FAIL",
+        "121618": "FAIL",
+        "116726": "MIXED"
+      }
+    },
+    "combined|r=0.5|λs=0.01|λz=0.0": {
+      "n": 4,
+      "n_WIN": 0,
+      "n_FAIL": 3,
+      "n_signal_success": 3,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "FAIL",
+        "120717": "FAIL",
+        "121618": "FAIL",
+        "116726": "MIXED"
+      }
+    },
+    "combined|r=0.5|λs=0.1|λz=0.0": {
+      "n": 4,
+      "n_WIN": 0,
+      "n_FAIL": 3,
+      "n_signal_success": 3,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "FAIL",
+        "120717": "FAIL",
+        "121618": "FAIL",
+        "116726": "MIXED"
+      }
+    },
+    "combined|r=0.5|λs=1.0|λz=0.0": {
+      "n": 4,
+      "n_WIN": 0,
+      "n_FAIL": 3,
+      "n_signal_success": 3,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "FAIL",
+        "120717": "FAIL",
+        "121618": "FAIL",
+        "116726": "MIXED"
+      }
+    },
+    "combined|r=0.5|λs=10.0|λz=0.0": {
+      "n": 4,
+      "n_WIN": 0,
+      "n_FAIL": 3,
+      "n_signal_success": 3,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "FAIL",
+        "120717": "FAIL",
+        "121618": "FAIL",
+        "116726": "MIXED"
+      }
+    },
+    "directional|r=0.25|λs=0.0|λz=0.0": {
+      "n": 4,
+      "n_WIN": 1,
+      "n_FAIL": 3,
+      "n_signal_success": 4,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "FAIL",
+        "120717": "FAIL",
+        "121618": "FAIL",
+        "116726": "WIN"
+      }
+    },
+    "directional|r=0.5|λs=0.0|λz=0.0": {
+      "n": 4,
+      "n_WIN": 1,
+      "n_FAIL": 3,
+      "n_signal_success": 4,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "FAIL",
+        "120717": "FAIL",
+        "121618": "FAIL",
+        "116726": "WIN"
+      }
+    },
+    "directional|r=1.0|λs=0.0|λz=0.0": {
+      "n": 4,
+      "n_WIN": 1,
+      "n_FAIL": 3,
+      "n_signal_success": 4,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "FAIL",
+        "120717": "FAIL",
+        "121618": "FAIL",
+        "116726": "WIN"
+      }
+    },
+    "signal|r=0.25|λs=0.0|λz=0.0": {
+      "n": 4,
+      "n_WIN": 0,
+      "n_FAIL": 3,
+      "n_signal_success": 3,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "FAIL",
+        "120717": "FAIL",
+        "121618": "FAIL",
+        "116726": "MIXED"
+      }
+    },
+    "signal|r=0.5|λs=0.0|λz=0.0": {
+      "n": 4,
+      "n_WIN": 0,
+      "n_FAIL": 3,
+      "n_signal_success": 3,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "FAIL",
+        "120717": "FAIL",
+        "121618": "FAIL",
+        "116726": "MIXED"
+      }
+    },
+    "signal|r=1.0|λs=0.0|λz=0.0": {
+      "n": 4,
+      "n_WIN": 1,
+      "n_FAIL": 3,
+      "n_signal_success": 4,
+      "n_fa_not_worse": 1,
+      "subjects": [
+        "106319",
+        "120717",
+        "121618",
+        "116726"
+      ],
+      "statuses": {
+        "106319": "FAIL",
+        "120717": "FAIL",
+        "121618": "FAIL",
+        "116726": "STRONG_WIN"
+      }
+    }
+  },
+  "z_norm_median": 0.5212901532649994,
+  "z_runaway_vs_train": false,
+  "oracle_ref": {
+    "phase5_signal": {
+      "PSNR": -2.597134608204725,
+      "FA_MAE": 0.17999496941880141,
+      "latent_norm": 0.36324456334114075
+    },
+    "phase5_dti_oracle": {
+      "PSNR": -18.549147018249784,
+      "FA_MAE": 0.16399892760847987,
+      "latent_norm": 1.1266764402389526
+    },
+    "note": "Oracle is diagnostic upper bound only — not formal unseen inference."
+  },
+  "Go_NoGo": "CONDITIONAL_GO",
+  "failure_or_success_mechanism": "Partial improvement from angular/combined objectives; not yet ≥3/4 reproducible WIN.",
+  "evidence_for_v2_now": false,
+  "next_step": "Keep architecture; deepen identifiable adaptation research (angular/combined variants)."
+}

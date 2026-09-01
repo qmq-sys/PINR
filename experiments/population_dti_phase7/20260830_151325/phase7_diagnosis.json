@@ -1,0 +1,91 @@
+{
+  "Q1_observed_signal_improves": false,
+  "Q2_holdout_signal_improves": false,
+  "Q3_signal_gain_with_FA_MD_gain": false,
+  "Q4_obs_PSNR_up_holdout_PSNR_down": false,
+  "Q5_z_up_Ddrift_up_DTI_worse": false,
+  "Q6_sampling_affects_adaptation": false,
+  "Q6_sampling_FA_spread": NaN,
+  "Q7_consistent_across_subjects": false,
+  "Q7_detail": {
+    "n_subjects": 1,
+    "n_FA_improve_vs_z0": 0,
+    "n_FA_worsen_vs_z0": 0,
+    "n_obs_PSNR_improve": 0,
+    "n_holdout_PSNR_improve": 0,
+    "n_holdout_PSNR_worsen": 0,
+    "mean_FA_MAE_z0": 0.17340725400929372,
+    "mean_FA_MAE_adapted": 0.17332142716081142,
+    "consistent_signal_DTI_mismatch": false
+  },
+  "primary_100pct_endpoints": {
+    "iter0": {
+      "observed_PSNR": -16.23253897467013,
+      "holdout_PSNR": -10.927169567995916,
+      "FA_MAE": 0.17340725400929372,
+      "MD_MAE": 0.00033228888092181474,
+      "latent_norm": 0.0,
+      "mean_delta_D_fro_vs_z0": 0.0
+    },
+    "iter_final": {
+      "observed_PSNR": -16.236045749851577,
+      "holdout_PSNR": -10.950536092974943,
+      "FA_MAE": 0.17332142716081142,
+      "MD_MAE": 0.0003324025215045102,
+      "latent_norm": 0.014702171087265015,
+      "mean_delta_D_fro_vs_z0": 3.7363321283233178e-06
+    }
+  },
+  "subject_finals": [
+    {
+      "subject_id": "106319",
+      "sampling_fraction": 1.0,
+      "n_observed_vols": 63,
+      "n_holdout_vols": 45,
+      "FA_MAE_z0": 0.17340725400929372,
+      "FA_MAE": 0.17332142716081142,
+      "MD_MAE_z0": 0.00033228888092181474,
+      "MD_MAE": 0.0003324025215045102,
+      "observed_PSNR_z0": -16.23253897467013,
+      "observed_PSNR": -16.236045749851577,
+      "holdout_PSNR_z0": -10.927169567995916,
+      "holdout_PSNR": -10.950536092974943,
+      "latent_norm": 0.014702171087265015,
+      "mean_D_fro_error_vs_wls_z0": 0.0007727638114817885,
+      "mean_D_fro_error_vs_wls": 0.0007727457936149554,
+      "mean_delta_D_fro_vs_z0": 3.7363321283233178e-06,
+      "delta_FA_MAE": -8.582684848229549e-05,
+      "delta_observed_PSNR": -0.0035067751814459314,
+      "delta_holdout_PSNR": -0.023366524979026693
+    }
+  ],
+  "sampling_finals": [
+    {
+      "subject_id": "106319",
+      "sampling_fraction": 1.0,
+      "n_observed_vols": 63,
+      "n_holdout_vols": 45,
+      "FA_MAE_z0": 0.17340725400929372,
+      "FA_MAE": 0.17332142716081142,
+      "MD_MAE_z0": 0.00033228888092181474,
+      "MD_MAE": 0.0003324025215045102,
+      "observed_PSNR_z0": -16.23253897467013,
+      "observed_PSNR": -16.236045749851577,
+      "holdout_PSNR_z0": -10.927169567995916,
+      "holdout_PSNR": -10.950536092974943,
+      "latent_norm": 0.014702171087265015,
+      "mean_D_fro_error_vs_wls_z0": 0.0007727638114817885,
+      "mean_D_fro_error_vs_wls": 0.0007727457936149554,
+      "mean_delta_D_fro_vs_z0": 3.7363321283233178e-06,
+      "delta_FA_MAE": -8.582684848229549e-05,
+      "delta_observed_PSNR": -0.0035067751814459314,
+      "delta_holdout_PSNR": -0.023366524979026693
+    }
+  ],
+  "zeroshot_reasonable": true,
+  "oracle_capability_from_phase5_6": true,
+  "Go_NoGo": "CONDITIONAL_GO",
+  "rationale": "Zero-shot DTI is reasonable; Phase5/6 oracle showed latent→D capability; signal-only observed/holdout adaptation still shows signal/DTI mismatch (and/or holdout issues). Bottleneck is latent identifiability / adaptation objective — not proven architecture failure. Continue research under v1; do not auto-build v2.",
+  "bottleneck": "latent_identifiability_adaptation_objective",
+  "evidence_for_v2_now": false
+}

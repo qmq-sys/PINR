@@ -1,0 +1,78 @@
+{
+  "epochs_run": 150,
+  "train_loss_early_mean": 0.6309084114065527,
+  "train_loss_late_mean": 0.19559342036334143,
+  "train_loss_late_std": 0.10535987026372096,
+  "train_improved": true,
+  "train_plateau": false,
+  "zero_shot": {
+    "FA_MAE": 0.23358610092624357,
+    "MD_MAE": 0.0003505586211314041,
+    "signal_PSNR": 1.808375716136485,
+    "signal_RelMSE": 1.3135072948858035
+  },
+  "adaptation_curve": [
+    {
+      "adapt_iter": 0,
+      "FA_MAE": 0.23358610092624357,
+      "MD_MAE": 0.0003505586211314041,
+      "signal_PSNR": 1.808375716136485,
+      "signal_RelMSE": 1.3135072948858035
+    },
+    {
+      "adapt_iter": 10,
+      "FA_MAE": 0.23474361872946664,
+      "MD_MAE": 0.00035238188348264867,
+      "signal_PSNR": 2.283025513075912,
+      "signal_RelMSE": 1.1775178773102608
+    },
+    {
+      "adapt_iter": 50,
+      "FA_MAE": 0.23749852543692845,
+      "MD_MAE": 0.00035672577727364606,
+      "signal_PSNR": 3.6360288614851184,
+      "signal_RelMSE": 0.8623174498210613
+    },
+    {
+      "adapt_iter": 100,
+      "FA_MAE": 0.23933469876125105,
+      "MD_MAE": 0.0003600236678254323,
+      "signal_PSNR": 4.750155804116601,
+      "signal_RelMSE": 0.6671976074901049
+    },
+    {
+      "adapt_iter": 200,
+      "FA_MAE": 0.24183694892228538,
+      "MD_MAE": 0.00036420434720099747,
+      "signal_PSNR": 5.86910882149433,
+      "signal_RelMSE": 0.5156549351150759
+    }
+  ],
+  "adaptation_FA_improved": false,
+  "adaptation_signal_improved": true,
+  "FA_MAE_adapt0": 0.23358610092624357,
+  "FA_MAE_adaptT": 0.24183694892228538,
+  "PSNR_adapt0": 1.808375716136485,
+  "PSNR_adaptT": 5.86910882149433,
+  "RelMSE_adapt0": 1.3135072948858035,
+  "RelMSE_adaptT": 0.5156549351150759,
+  "independent_FA_MAE": 0.17501985880102044,
+  "population_best_FA_MAE": 0.24183694892228538,
+  "FA_gap_population_minus_independent": 0.06681709012126494,
+  "parameter_efficiency": {
+    "total_theta_parameters": 59143,
+    "subject_latent_parameters_train_table": 48,
+    "adaptable_parameter_count": 16,
+    "adaptation_parameter_ratio": 0.0002705307475102717,
+    "latent_dim": 16,
+    "n_train_subjects_in_table": 3,
+    "formula": "adaptation_parameter_ratio = adaptable_parameter_count / total_theta_parameter_count"
+  },
+  "theta_underfitting_suspected": true,
+  "latent_underfitting_suspected": false,
+  "notes": [
+    "Val loss is zero-shot on held-out val subject (z=0), not a trained latent.",
+    "Do not treat 5-epoch smoke results as performance conclusions.",
+    "If Population << Independent after 100–200 epochs: report diagnosis, do not change architecture."
+  ]
+}

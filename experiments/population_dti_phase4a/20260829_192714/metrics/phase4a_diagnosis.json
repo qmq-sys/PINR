@@ -1,0 +1,57 @@
+{
+  "checkpoint_epochs": [
+    10,
+    20,
+    50,
+    100,
+    150
+  ],
+  "zero_shot_fa_mae": [
+    0.23358610092624357,
+    0.2032247225885201,
+    0.1835158980363348,
+    0.17589787973478743,
+    0.17340725400929372
+  ],
+  "zero_shot_psnr": [
+    1.808375716136485,
+    -12.038589273007826,
+    -12.455230755721843,
+    -13.82690825258054,
+    -14.721499063347508
+  ],
+  "adapt200_fa_mae": [
+    0.24183694892228538,
+    0.20812750450822115,
+    0.18765096479074056,
+    0.17818756955736187,
+    0.17600725507768133
+  ],
+  "adapt200_psnr": [
+    5.86910882149433,
+    -4.73653600403308,
+    0.7559475499056121,
+    -10.91956033683135,
+    -12.840207389477419
+  ],
+  "fa_zero_shot_epoch10": 0.23358610092624357,
+  "fa_zero_shot_last": 0.17340725400929372,
+  "psnr_zero_shot_epoch10": 1.808375716136485,
+  "psnr_zero_shot_last": -14.721499063347508,
+  "adapt_last_ckpt_fa0": 0.17340725400929372,
+  "adapt_last_ckpt_faT": 0.17600725507768133,
+  "adapt_last_ckpt_psnr0": -14.721499063347508,
+  "adapt_last_ckpt_psnrT": -12.840207389477419,
+  "train_loss_decreased": true,
+  "diagnosis_labels": [
+    "A_checkpoint_selection",
+    "C_signal_DTI_mismatch"
+  ],
+  "primary_diagnosis": "A_checkpoint_selection",
+  "notes": [
+    "A: later checkpoints improve unseen metrics → epoch-10 best was val-protocol artifact.",
+    "B: train improves while unseen worsens → overfitting to train subjects.",
+    "C: adaptation improves signal but not FA/MD → signal/parameter mismatch.",
+    "D: adaptation improves both signal and DTI → latent mechanism preliminarily effective."
+  ]
+}

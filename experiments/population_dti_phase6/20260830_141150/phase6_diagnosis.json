@@ -1,0 +1,106 @@
+{
+  "Q1_mixed_objective_relieves_conflict": false,
+  "Q2_exists_lambda_both_better_than_z0": false,
+  "Q2_both_better_configs": [],
+  "Q3_phase5_dti_z_is_runaway": true,
+  "Q3_detail": {
+    "z_DTI": 1.1266764402389526,
+    "mean_train_norm": 0.682499756415685,
+    "threshold_1p5x_train": 1.0237496346235275
+  },
+  "Q4_norm_regularization_helps": false,
+  "Q4_detail": {},
+  "Q5_pareto_compromise_exists": true,
+  "Q6_discuss_v2_now": false,
+  "best_compromise": {
+    "tag": "lambdaDTI=1000.0",
+    "lambda_DTI": 1000.0,
+    "lambda_z": 0.0,
+    "PSNR": -14.201503449815485,
+    "FA_MAE": 0.17396562919401026,
+    "MD_MAE": 0.00033276019947363296,
+    "mean_D_fro_error_vs_wls": 0.0007738838911891102,
+    "latent_norm": 0.038133375346660614,
+    "score": 0.029377470973034035
+  },
+  "references": {
+    "z0": {
+      "PSNR": -14.721499063347508,
+      "FA_MAE": 0.17340725400929372,
+      "MD_MAE": 0.00033228888092181474,
+      "mean_D_fro_error_vs_wls": 0.0007727638114817885,
+      "latent_norm": 0.0,
+      "RelMSE": 59.07720864650867
+    },
+    "phase5_signal": {
+      "PSNR": -2.597134608204725,
+      "FA_MAE": 0.17999496941880141,
+      "MD_MAE": 0.00034149258412955076,
+      "mean_D_fro_error_vs_wls": 0.0007932474663061984,
+      "latent_norm": 0.36324456334114075,
+      "RelMSE": 3.6222925405770683
+    },
+    "phase5_dti_oracle": {
+      "PSNR": -18.549147018249784,
+      "FA_MAE": 0.16399892760847987,
+      "MD_MAE": 0.00032809941634992295,
+      "mean_D_fro_error_vs_wls": 0.0007445807077974063,
+      "latent_norm": 1.1266764402389526,
+      "RelMSE": 142.62142209295655
+    }
+  },
+  "pareto_frontier_names": [
+    "λD=1.0_λz=0.0",
+    "λD=10.0_λz=0.0",
+    "λD=1000.0_λz=0.0",
+    "λD=10000.0_λz=0.0"
+  ],
+  "pareto_points": [
+    {
+      "name": "z0",
+      "PSNR": -14.721499063347508,
+      "FA_MAE": 0.17340725400929372,
+      "MD_MAE": 0.00033228888092181474,
+      "mean_D_fro_error_vs_wls": 0.0007727638114817885,
+      "latent_norm": 0.0,
+      "RelMSE": 59.07720864650867
+    },
+    {
+      "name": "phase5_signal",
+      "PSNR": -2.597134608204725,
+      "FA_MAE": 0.17999496941880141,
+      "MD_MAE": 0.00034149258412955076,
+      "mean_D_fro_error_vs_wls": 0.0007932474663061984,
+      "latent_norm": 0.36324456334114075,
+      "RelMSE": 3.6222925405770683
+    },
+    {
+      "name": "phase5_dti_oracle",
+      "PSNR": -18.549147018249784,
+      "FA_MAE": 0.16399892760847987,
+      "MD_MAE": 0.00032809941634992295,
+      "mean_D_fro_error_vs_wls": 0.0007445807077974063,
+      "latent_norm": 1.1266764402389526,
+      "RelMSE": 142.62142209295655
+    },
+    {
+      "name": "phase6_best_compromise",
+      "PSNR": -14.201503449815485,
+      "FA_MAE": 0.17396562919401026,
+      "mean_D_fro_error_vs_wls": 0.0007738838911891102,
+      "latent_norm": 0.038133375346660614,
+      "lambda_DTI": 1000.0,
+      "lambda_z": 0.0
+    }
+  ],
+  "scale_warnings": [
+    "λ=0.001: weighted L_DTI / L_signal ≈ 4.129e-07 (DTI term may be weak)",
+    "λ=0.01: weighted L_DTI / L_signal ≈ 4.129e-06 (DTI term may be weak)",
+    "λ=0.1: weighted L_DTI / L_signal ≈ 4.129e-05 (DTI term may be weak)",
+    "λ=1.0: weighted L_DTI / L_signal ≈ 4.129e-04 (DTI term may be weak)",
+    "λ=10.0: weighted L_DTI / L_signal ≈ 4.129e-03 (DTI term may be weak)"
+  ],
+  "Go_NoGo": "HOLD_v1 — mixed objective did not yield simultaneous signal+DTI gain vs z=0; oracle still shows DTI capability → prioritize unsupervised/identifiable adaptation, not immediate architecture v2",
+  "evidence_for_v2": false,
+  "next_step": "Keep v1 architecture. Research unsupervised / signal-observable adaptation objectives that improve DTI without WLS oracle. Use Phase6 Pareto points as diagnostics only."
+}

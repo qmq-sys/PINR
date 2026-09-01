@@ -1,0 +1,17 @@
+{
+  "best_epoch": 1,
+  "best_val_mse": 2.3714306354522705,
+  "epochs": 5,
+  "train_subjects": [
+    "101309",
+    "102715",
+    "103515"
+  ],
+  "val_subjects": [
+    "104416"
+  ],
+  "test_subjects": [
+    "106319"
+  ],
+  "training_time_sec": 16.06453776359558
+}

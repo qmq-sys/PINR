@@ -1,0 +1,47 @@
+{
+  "case": "B_signal_DTI_objective_mismatch",
+  "z_norm_continues_increasing": true,
+  "z_norm_continues_after_200": false,
+  "PSNR_continues_improving": false,
+  "PSNR_improves_after_200": false,
+  "D_field_perturbation_increases": true,
+  "D_field_increases_after_200": false,
+  "FA_MD_eventually_improves": false,
+  "FA_improves_after_200": false,
+  "only_200_iters_insufficient": false,
+  "signal_DTI_mismatch_persists_at_1000": false,
+  "trajectory_endpoints": {
+    "iter0": {
+      "latent_norm": 0.0,
+      "PSNR": -14.721499063347508,
+      "RelMSE": 59.07720864650867,
+      "FA_MAE": 0.17340725400929372,
+      "MD_MAE": 0.00033228888092181474,
+      "mean_relative_delta_D": 0.0
+    },
+    "iter200": {
+      "latent_norm": 0.01375515852123499,
+      "PSNR": -14.640239564705148,
+      "RelMSE": 57.98211022150415,
+      "FA_MAE": 0.17345514498388515,
+      "MD_MAE": 0.00033247860528982183,
+      "mean_relative_delta_D": 0.003330528894871669
+    },
+    "iter_final": {
+      "latent_norm": 0.01375515852123499,
+      "PSNR": -14.640239564705148,
+      "RelMSE": 57.98211022150415,
+      "FA_MAE": 0.17345514498388515,
+      "MD_MAE": 0.00033247860528982183,
+      "mean_relative_delta_D": 0.003330528894871669
+    }
+  },
+  "answers": {
+    "1_z_norm_keeps_increasing": true,
+    "2_PSNR_keeps_improving": false,
+    "3_D_perturbation_keeps_increasing": true,
+    "4_FA_MD_eventually_improves": false,
+    "5_200_iters_insufficient": false,
+    "6_mismatch_at_1000": false
+  }
+}

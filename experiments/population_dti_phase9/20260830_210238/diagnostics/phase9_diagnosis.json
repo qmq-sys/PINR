@@ -1,0 +1,120 @@
+{
+  "Q1_disentanglement_reduces_DTI_drift": false,
+  "Q2_FA_degradation_reduced_with_drift": false,
+  "Q3_signal_adaptation_still_improves_holdout": true,
+  "Q4_subjects_signal_up_holdout_up_FA_stable": [
+    "116726"
+  ],
+  "Q5_reproducible_on_ge_3_of_4": false,
+  "Q6_lambda_0p01_and_0p1_consistent_trend": true,
+  "Q7_failure_type": "adaptation_objective_and_latent_identifiability_problem",
+  "Q8_decision": "NO_GO",
+  "best_lambda_dis": 0.1,
+  "per_lambda": {
+    "0.0": {
+      "n_subjects": 4,
+      "n_holdout_improve": 4,
+      "n_dti_stable": 1,
+      "n_ok_holdout_and_stable": 1,
+      "subjects_ok": [
+        "116726"
+      ],
+      "n_fa_improved": 1,
+      "subjects_fa_improved": [
+        "116726"
+      ],
+      "n_over_regularized": 0,
+      "n_overfit": 0,
+      "mean_rel_D_drift": 4.4530392341306815,
+      "mean_delta_FA_MAE": 0.005435176531246477,
+      "mean_delta_PSNR_holdout": 11.26967485425929,
+      "mean_z_norm": 0.4667375013232231
+    },
+    "0.01": {
+      "n_subjects": 4,
+      "n_holdout_improve": 4,
+      "n_dti_stable": 1,
+      "n_ok_holdout_and_stable": 1,
+      "subjects_ok": [
+        "116726"
+      ],
+      "n_fa_improved": 1,
+      "subjects_fa_improved": [
+        "116726"
+      ],
+      "n_over_regularized": 0,
+      "n_overfit": 0,
+      "mean_rel_D_drift": 4.444968346803759,
+      "mean_delta_FA_MAE": 0.005436689423491313,
+      "mean_delta_PSNR_holdout": 11.269202528514533,
+      "mean_z_norm": 0.46654678881168365
+    },
+    "0.1": {
+      "n_subjects": 4,
+      "n_holdout_improve": 4,
+      "n_dti_stable": 1,
+      "n_ok_holdout_and_stable": 1,
+      "subjects_ok": [
+        "116726"
+      ],
+      "n_fa_improved": 1,
+      "subjects_fa_improved": [
+        "116726"
+      ],
+      "n_over_regularized": 0,
+      "n_overfit": 0,
+      "mean_rel_D_drift": 4.446339321175427,
+      "mean_delta_FA_MAE": 0.00543360030746199,
+      "mean_delta_PSNR_holdout": 11.26438306155832,
+      "mean_z_norm": 0.4673362150788307
+    }
+  },
+  "mean_drift_by_lambda": {
+    "0.0": 4.4530392341306815,
+    "0.01": 4.444968346803759,
+    "0.1": 4.446339321175427
+  },
+  "mean_delta_FA_by_lambda": {
+    "0.0": 0.005435176531246477,
+    "0.01": 0.005436689423491313,
+    "0.1": 0.00543360030746199
+  },
+  "mechanism": "At prescribed lambda_dis in {0.01,0.1}, L_dis is negligible vs L_signal (trajectories ~identical to lambda_dis=0). Signal adaptation still improves holdout for most subjects while FA degrades; relative Frobenius D-drift regularization does not create a joint signal↑+FA-stable regime. Prior Phase5 oracle shows pathway capacity exists, so failure is objective/identifiability — not representation capacity. Subject 116726 FA↑ with ~0dB holdout gain and huge D drift is not a success case.",
+  "baseline_lambda0": {
+    "n_subjects": 4,
+    "n_holdout_improve": 4,
+    "n_dti_stable": 1,
+    "n_ok_holdout_and_stable": 1,
+    "subjects_ok": [
+      "116726"
+    ],
+    "n_fa_improved": 1,
+    "subjects_fa_improved": [
+      "116726"
+    ],
+    "n_over_regularized": 0,
+    "n_overfit": 0,
+    "mean_rel_D_drift": 4.4530392341306815,
+    "mean_delta_FA_MAE": 0.005435176531246477,
+    "mean_delta_PSNR_holdout": 11.26967485425929,
+    "mean_z_norm": 0.4667375013232231
+  },
+  "thresholds": {
+    "need_ok": 3,
+    "need_fa": 2,
+    "n_subjects": 4
+  },
+  "Q1_note": "prescribed_lambda_dis_insufficient_vs_signal_loss_scale",
+  "caveat_116726": {
+    "counted_ok_by_raw_threshold": true,
+    "delta_PSNR_holdout": 0.017893594599936335,
+    "note": "holdout gain ~0.02dB (noise-level); FA improves while rel D drift ~15 — not disentanglement success"
+  },
+  "lambda_effect_size": {
+    "mean_rel_D_drift_lambda0": 4.4530392341306815,
+    "mean_rel_D_drift_lambda0p01": 4.444968346803759,
+    "mean_rel_D_drift_lambda0p1": 4.446339321175427,
+    "relative_change_0p01_vs_0": -0.0018124446928430293,
+    "relative_change_0p1_vs_0": -0.0015045708342075192
+  }
+}
