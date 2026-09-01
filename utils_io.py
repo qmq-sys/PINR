@@ -41,6 +41,10 @@ def save_json(path: str | Path, obj: Any) -> None:
     p.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
+def load_json(path: str | Path) -> Any:
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+
+
 def make_experiment_dir(base: str | Path | None = None, tag: str = "population_dti") -> Path:
     root = Path(base) if base else package_root() / "experiments" / tag
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")

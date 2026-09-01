@@ -16,8 +16,22 @@ def _masked(a: np.ndarray, mask: np.ndarray) -> np.ndarray:
     return np.asarray(a, dtype=np.float64)[np.asarray(mask, dtype=bool)]
 
 
+def pearson_corr(pred: np.ndarray, ref: np.ndarray) -> float:
+    """Pearson r on 1D arrays; NaN if undefined."""
+    p = np.asarray(pred, dtype=np.float64).ravel()
+    r = np.asarray(ref, dtype=np.float64).ravel()
+    if p.size < 2 or p.shape != r.shape:
+        return float("nan")
+    p = p - np.mean(p)
+    r = r - np.mean(r)
+    den = float(np.sqrt(np.sum(p * p) * np.sum(r * r)))
+    if den <= 1e-20:
+        return float("nan")
+    return float(np.sum(p * r) / den)
+
+
 def scalar_error_stats(pred: np.ndarray, ref: np.ndarray, mask: np.ndarray) -> dict[str, float]:
-    """MAE, RMSE, median abs err, P95 abs err on mask."""
+    """MAE, RMSE, median abs err, P95 abs err, Pearson on mask."""
     m = np.asarray(mask, dtype=bool)
     p = _masked(pred, m)
     r = _masked(ref, m)
@@ -27,6 +41,7 @@ def scalar_error_stats(pred: np.ndarray, ref: np.ndarray, mask: np.ndarray) -> d
             "RMSE": float("nan"),
             "median_abs": float("nan"),
             "P95_abs": float("nan"),
+            "Pearson": float("nan"),
             "n": 0,
         }
     err = np.abs(p - r)
@@ -35,6 +50,7 @@ def scalar_error_stats(pred: np.ndarray, ref: np.ndarray, mask: np.ndarray) -> d
         "RMSE": float(np.sqrt(np.mean((p - r) ** 2))),
         "median_abs": float(np.median(err)),
         "P95_abs": float(np.percentile(err, 95.0)),
+        "Pearson": pearson_corr(p, r),
         "n": int(p.size),
     }
 
@@ -157,18 +173,22 @@ def format_metrics_row(subject_id: str, mode: str, dti: dict[str, Any], sig: dic
         "signal_SSIM": sig.get("SSIM"),
         "FA_MAE": dti.get("FA", {}).get("MAE"),
         "FA_RMSE": dti.get("FA", {}).get("RMSE"),
+        "FA_Pearson": dti.get("FA", {}).get("Pearson"),
         "FA_median_abs": dti.get("FA", {}).get("median_abs"),
         "FA_P95_abs": dti.get("FA", {}).get("P95_abs"),
         "MD_MAE": dti.get("MD", {}).get("MAE"),
         "MD_RMSE": dti.get("MD", {}).get("RMSE"),
+        "MD_Pearson": dti.get("MD", {}).get("Pearson"),
         "MD_median_abs": dti.get("MD", {}).get("median_abs"),
         "MD_P95_abs": dti.get("MD", {}).get("P95_abs"),
         "AD_MAE": dti.get("AD", {}).get("MAE"),
         "AD_RMSE": dti.get("AD", {}).get("RMSE"),
+        "AD_Pearson": dti.get("AD", {}).get("Pearson"),
         "AD_median_abs": dti.get("AD", {}).get("median_abs"),
         "AD_P95_abs": dti.get("AD", {}).get("P95_abs"),
         "RD_MAE": dti.get("RD", {}).get("MAE"),
         "RD_RMSE": dti.get("RD", {}).get("RMSE"),
+        "RD_Pearson": dti.get("RD", {}).get("Pearson"),
         "RD_median_abs": dti.get("RD", {}).get("median_abs"),
         "RD_P95_abs": dti.get("RD", {}).get("P95_abs"),
         "n_voxels": dti.get("n_voxels"),

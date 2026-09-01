@@ -1,0 +1,17 @@
+{
+  "exp_dir": "E:\\BaiduNetdiskDownload\\Population-DTI-INR\\experiments\\population_dti\\20260829_174239",
+  "checkpoint": "E:\\BaiduNetdiskDownload\\Population-DTI-INR\\experiments\\population_dti\\20260829_174239\\checkpoints\\best\\theta.pt",
+  "train_subjects": [
+    "101309",
+    "102715",
+    "103515"
+  ],
+  "val_subjects": [
+    "104416"
+  ],
+  "test_subjects": [
+    "106319"
+  ],
+  "sampling_fraction": 1.0,
+  "reuse_maps": true
+}
