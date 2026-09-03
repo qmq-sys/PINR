@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="340" viewBox="0 0 860 340">
+  <rect width="860" height="340" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="360" height="260" rx="14" fill="#F7FAFC" stroke="#163A5F" stroke-width="1.5"/>
+  <text x="220" y="85" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#163A5F">Zero-shot</text>
+  <rect x="90" y="120" width="260" height="55" rx="8" fill="#FFFFFF" stroke="#163A5F" stroke-width="2"/>
+  <text x="220" y="154" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#163A5F">Frozen θ</text>
+  <line x1="220" y1="175" x2="220" y2="202" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="214,202 226,202 220,212" fill="#4C9AFF"/>
+  <rect x="90" y="214" width="260" height="55" rx="8" fill="#E8F1FB" stroke="#163A5F" stroke-width="2"/>
+  <text x="220" y="248" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#163A5F">z_new = 0</text>
+
+  <rect x="460" y="40" width="360" height="260" rx="14" fill="#E8F1FB" stroke="#163A5F" stroke-width="1.5"/>
+  <text x="640" y="85" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#163A5F">Latent adaptation</text>
+  <rect x="510" y="120" width="260" height="55" rx="8" fill="#FFFFFF" stroke="#163A5F" stroke-width="2"/>
+  <text x="640" y="154" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#163A5F">Frozen θ</text>
+  <line x1="640" y1="175" x2="640" y2="202" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="634,202 646,202 640,212" fill="#4C9AFF"/>
+  <rect x="510" y="214" width="260" height="55" rx="8" fill="#163A5F" stroke="#163A5F" stroke-width="2"/>
+  <text x="640" y="248" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#FFFFFF">Optimize z_new</text>
+</svg>

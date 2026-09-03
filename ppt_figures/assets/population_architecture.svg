@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="560" viewBox="0 0 880 560">
+  <rect width="880" height="560" fill="#FFFFFF"/>
+  <text x="440" y="36" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#163A5F">Population-DTI-INR Architecture</text>
+
+  <!-- Subject branch -->
+  <rect x="340" y="60" width="200" height="44" rx="8" fill="#E8F1FB" stroke="#4C9AFF" stroke-width="2"/>
+  <text x="440" y="88" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#163A5F">Subject ID</text>
+  <line x1="440" y1="104" x2="440" y2="128" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="434,128 446,128 440,138" fill="#4C9AFF"/>
+  <rect x="340" y="140" width="200" height="44" rx="8" fill="#4C9AFF" stroke="#163A5F" stroke-width="1.5"/>
+  <text x="440" y="168" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#FFFFFF">latent z_s</text>
+
+  <!-- Coordinate branch -->
+  <rect x="60" y="200" width="180" height="44" rx="8" fill="#F7FAFC" stroke="#163A5F" stroke-width="2"/>
+  <text x="150" y="228" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#163A5F">Coordinate x</text>
+  <line x1="240" y1="222" x2="300" y2="222" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="300,216 300,228 312,222" fill="#4C9AFF"/>
+
+  <!-- Fourier -->
+  <rect x="320" y="200" width="240" height="44" rx="8" fill="#FFFFFF" stroke="#163A5F" stroke-width="2"/>
+  <text x="440" y="228" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#163A5F">Fourier Encoder</text>
+  <line x1="440" y1="244" x2="440" y2="268" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="434,268 446,268 440,278" fill="#4C9AFF"/>
+
+  <!-- z joins -->
+  <line x1="440" y1="184" x2="440" y2="200" stroke="#4C9AFF" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <!-- Shared MLP -->
+  <rect x="280" y="280" width="320" height="56" rx="10" fill="#163A5F" stroke="#163A5F" stroke-width="2"/>
+  <text x="440" y="315" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#FFFFFF">Shared MLP  (θ)</text>
+
+  <line x1="440" y1="336" x2="440" y2="360" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="434,360 446,360 440,370" fill="#4C9AFF"/>
+
+  <!-- Heads -->
+  <rect x="180" y="380" width="180" height="50" rx="8" fill="#E8F1FB" stroke="#163A5F" stroke-width="2"/>
+  <text x="270" y="411" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#163A5F">S0 head</text>
+  <rect x="520" y="380" width="180" height="50" rx="8" fill="#E8F1FB" stroke="#163A5F" stroke-width="2"/>
+  <text x="610" y="411" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#163A5F">D head</text>
+  <line x1="360" y1="370" x2="270" y2="380" stroke="#4C9AFF" stroke-width="2"/>
+  <line x1="520" y1="370" x2="610" y2="380" stroke="#4C9AFF" stroke-width="2"/>
+
+  <line x1="270" y1="430" x2="270" y2="455" stroke="#4C9AFF" stroke-width="2"/>
+  <line x1="610" y1="430" x2="610" y2="455" stroke="#4C9AFF" stroke-width="2"/>
+  <line x1="270" y1="455" x2="610" y2="455" stroke="#4C9AFF" stroke-width="2"/>
+  <line x1="440" y1="455" x2="440" y2="470" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="434,470 446,470 440,480" fill="#4C9AFF"/>
+
+  <rect x="300" y="482" width="280" height="48" rx="8" fill="#FFFFFF" stroke="#163A5F" stroke-width="2"/>
+  <text x="440" y="512" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#163A5F">DTI Forward → Predicted signal</text>
+
+  <!-- Legend -->
+  <rect x="650" y="140" width="200" height="90" rx="8" fill="#F7FAFC" stroke="#666666" stroke-width="1"/>
+  <circle cx="675" cy="170" r="8" fill="#163A5F"/>
+  <text x="690" y="175" font-family="Arial" font-size="12" fill="#163A5F">Shared parameters θ</text>
+  <circle cx="675" cy="205" r="8" fill="#4C9AFF"/>
+  <text x="690" y="210" font-family="Arial" font-size="12" fill="#163A5F">Subject-specific latent z</text>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="640" viewBox="0 0 420 640">
+<rect width="420" height="640" fill="#FFFFFF"/>
+<text x="210" y="28" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#163A5F">Single-QINR Physics Pipeline</text>
+
+  <rect x="70" y="48" width="280" height="56" rx="8" ry="8"
+        fill="#E8F1FB" stroke="#163A5F" stroke-width="2"/>
+  <text x="210.0" y="81.0" text-anchor="middle"
+        font-family="Arial, Microsoft YaHei, sans-serif" font-size="14"
+        font-weight="500" fill="#163A5F"><tspan x="210.0" dy="0">Coordinate (x,y,z)</tspan></text>
+
+  <line x1="210" y1="104" x2="210" y2="118" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="204,116 216,116 210,126" fill="#4C9AFF"/>
+
+  <rect x="70" y="126" width="280" height="56" rx="8" ry="8"
+        fill="#FFFFFF" stroke="#163A5F" stroke-width="2"/>
+  <text x="210.0" y="159.0" text-anchor="middle"
+        font-family="Arial, Microsoft YaHei, sans-serif" font-size="14"
+        font-weight="500" fill="#163A5F"><tspan x="210.0" dy="0">Fourier Feature</tspan></text>
+
+  <line x1="210" y1="182" x2="210" y2="196" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="204,194 216,194 210,204" fill="#4C9AFF"/>
+
+  <rect x="70" y="204" width="280" height="56" rx="8" ry="8"
+        fill="#FFFFFF" stroke="#163A5F" stroke-width="2"/>
+  <text x="210.0" y="237.0" text-anchor="middle"
+        font-family="Arial, Microsoft YaHei, sans-serif" font-size="14"
+        font-weight="500" fill="#163A5F"><tspan x="210.0" dy="0">MLP</tspan></text>
+
+  <line x1="210" y1="260" x2="210" y2="274" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="204,272 216,272 210,282" fill="#4C9AFF"/>
+
+  <rect x="70" y="282" width="280" height="56" rx="8" ry="8"
+        fill="#FFFFFF" stroke="#163A5F" stroke-width="2"/>
+  <text x="210.0" y="315.0" text-anchor="middle"
+        font-family="Arial, Microsoft YaHei, sans-serif" font-size="14"
+        font-weight="700" fill="#163A5F"><tspan x="210.0" dy="0">S0 + D</tspan></text>
+
+  <line x1="210" y1="338" x2="210" y2="352" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="204,350 216,350 210,360" fill="#4C9AFF"/>
+
+  <rect x="70" y="360" width="280" height="56" rx="8" ry="8"
+        fill="#E8F1FB" stroke="#163A5F" stroke-width="2"/>
+  <text x="210.0" y="393.0" text-anchor="middle"
+        font-family="Arial, Microsoft YaHei, sans-serif" font-size="14"
+        font-weight="500" fill="#163A5F"><tspan x="210.0" dy="0">DTI Forward Model</tspan></text>
+
+  <line x1="210" y1="416" x2="210" y2="430" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="204,428 216,428 210,438" fill="#4C9AFF"/>
+
+  <rect x="70" y="438" width="280" height="56" rx="8" ry="8"
+        fill="#FFFFFF" stroke="#163A5F" stroke-width="2"/>
+  <text x="210.0" y="471.0" text-anchor="middle"
+        font-family="Arial, Microsoft YaHei, sans-serif" font-size="14"
+        font-weight="500" fill="#163A5F"><tspan x="210.0" dy="0">Signal prediction</tspan></text>
+
+  <line x1="210" y1="494" x2="210" y2="508" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="204,506 216,506 210,516" fill="#4C9AFF"/>
+
+  <rect x="70" y="516" width="280" height="56" rx="8" ry="8"
+        fill="#E8F1FB" stroke="#163A5F" stroke-width="2"/>
+  <text x="210.0" y="549.0" text-anchor="middle"
+        font-family="Arial, Microsoft YaHei, sans-serif" font-size="14"
+        font-weight="700" fill="#163A5F"><tspan x="210.0" dy="0">MSE(S_pred, S_obs)</tspan></text>
+<rect x="250" y="580" width="150" height="36" rx="18" fill="#163A5F"/><text x="325" y="603" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#FFFFFF">Physics self-supervision</text>
+</svg>

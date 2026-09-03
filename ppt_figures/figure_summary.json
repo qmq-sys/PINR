@@ -1,0 +1,93 @@
+{
+  "fig1": {
+    "paths": [
+      "e:\\BaiduNetdiskDownload\\Population-DTI-INR\\ppt_figures\\fig1_signal_vs_fa_paradox.png",
+      "e:\\BaiduNetdiskDownload\\Population-DTI-INR\\ppt_figures\\fig1b_signal_relmse_bars.png"
+    ],
+    "relmse": [
+      0.07045456319685536,
+      0.0756833204309332,
+      0.07589029197073198
+    ],
+    "fa_r": [
+      0.4806167558223142,
+      0.32629136597970515,
+      0.45290740563010184
+    ],
+    "fa_mae": [
+      0.14390673604602838,
+      0.14240628157439686,
+      0.15171888139117654
+    ]
+  },
+  "fig2": {
+    "path": "e:\\BaiduNetdiskDownload\\Population-DTI-INR\\ppt_figures\\fig2_fa_maps_comparison.png",
+    "FA_r": 0.4806167558223142,
+    "FA_MAE": 0.14390673604602838
+  },
+  "fig3": {
+    "path": "e:\\BaiduNetdiskDownload\\Population-DTI-INR\\ppt_figures\\fig3_fa_scatter_correlation.png",
+    "FA_r_demo": 0.4806167558223142,
+    "FA_r_all": [
+      0.4806167558223142,
+      0.32629136597970515,
+      0.45290740563010184
+    ]
+  },
+  "fig4": {
+    "paths": [
+      "e:\\BaiduNetdiskDownload\\Population-DTI-INR\\ppt_figures\\fig4_tensor_drift.png",
+      "e:\\BaiduNetdiskDownload\\Population-DTI-INR\\ppt_figures\\fig4b_tensor_drift_boxplot.png"
+    ],
+    "drift": [
+      1.7191767721259998,
+      2.365973887181,
+      1.812024987792,
+      1.533501258901
+    ],
+    "delta_psnr": [
+      12.075702150838143,
+      22.48630893959721,
+      10.498794732001858,
+      0.0178935945999363
+    ],
+    "delta_fa_mae": [
+      0.0061017679270444,
+      0.0117750023706164,
+      0.0076979034921758,
+      -0.0038339676648508
+    ],
+    "mean_rel_D_drift": [
+      0.5439163541726234,
+      1.2258057911640785,
+      0.5502452175746422,
+      15.49218957361138
+    ]
+  },
+  "fig5": {
+    "paths": [
+      "e:\\BaiduNetdiskDownload\\Population-DTI-INR\\ppt_figures\\fig5_phase9_lambda_ablation.png",
+      "e:\\BaiduNetdiskDownload\\Population-DTI-INR\\ppt_figures\\fig5b_lambda_fa_error.png"
+    ],
+    "lambdas": [
+      0.0,
+      0.01,
+      0.1
+    ],
+    "fa_mae_mean": [
+      0.17523774981901824,
+      0.17523926271126306,
+      0.17523617359523375
+    ],
+    "abs_drift_mean_x1e4": [
+      2.0028511496259997,
+      2.00224524488825,
+      2.003014390571
+    ],
+    "delta_psnr_mean": [
+      11.269674854259287,
+      11.269202528514532,
+      11.264383061558318
+    ]
+  }
+}

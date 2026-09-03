@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="280" viewBox="0 0 520 280">
+<rect width="520" height="280" fill="#FFFFFF"/>
+<text x="120" y="36" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#163A5F">Full sampling</text>
+<circle cx="40" cy="70" r="7" fill="#163A5F"/>
+<circle cx="40" cy="106" r="7" fill="#163A5F"/>
+<circle cx="40" cy="142" r="7" fill="#163A5F"/>
+<circle cx="40" cy="178" r="7" fill="#163A5F"/>
+<circle cx="80" cy="70" r="7" fill="#163A5F"/>
+<circle cx="80" cy="106" r="7" fill="#163A5F"/>
+<circle cx="80" cy="142" r="7" fill="#163A5F"/>
+<circle cx="80" cy="178" r="7" fill="#163A5F"/>
+<circle cx="120" cy="70" r="7" fill="#163A5F"/>
+<circle cx="120" cy="106" r="7" fill="#163A5F"/>
+<circle cx="120" cy="142" r="7" fill="#163A5F"/>
+<circle cx="120" cy="178" r="7" fill="#163A5F"/>
+<circle cx="160" cy="70" r="7" fill="#163A5F"/>
+<circle cx="160" cy="106" r="7" fill="#163A5F"/>
+<circle cx="160" cy="142" r="7" fill="#163A5F"/>
+<circle cx="160" cy="178" r="7" fill="#163A5F"/>
+<circle cx="200" cy="70" r="7" fill="#163A5F"/>
+<circle cx="200" cy="106" r="7" fill="#163A5F"/>
+<circle cx="200" cy="142" r="7" fill="#163A5F"/>
+<circle cx="200" cy="178" r="7" fill="#163A5F"/>
+<text x="390" y="36" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#163A5F">Sparse sampling</text>
+<circle cx="310" cy="70" r="7" fill="#4C9AFF"/>
+<circle cx="390" cy="70" r="7" fill="#4C9AFF"/>
+<circle cx="470" cy="106" r="7" fill="#4C9AFF"/>
+<circle cx="350" cy="142" r="7" fill="#4C9AFF"/>
+<circle cx="430" cy="178" r="7" fill="#4C9AFF"/>
+<circle cx="310" cy="178" r="7" fill="#4C9AFF"/>
+
+  <line x1="230" y1="140" x2="282" y2="140" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="280,134 280,146 290,140" fill="#4C9AFF"/>
+<text x="260" y="250" text-anchor="middle" font-family="Arial" font-size="13" fill="#666666">Less measurements → higher uncertainty</text>
+</svg>

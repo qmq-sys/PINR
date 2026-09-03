@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="220" viewBox="0 0 1000 220">
+<rect width="1000" height="220" fill="#FFFFFF"/>
+<rect x="10" y="50" width="140" height="90" rx="12" fill="#163A5F" stroke="#163A5F" stroke-width="2"/>
+<text x="80" y="95" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#FFFFFF">Single-QINR</text>
+<line x1="150" y1="95" x2="202" y2="95" stroke="#4C9AFF" stroke-width="2.5"/><polygon points="202,89 202,101 212,95" fill="#4C9AFF"/>
+<rect x="210" y="50" width="140" height="90" rx="12" fill="#E8F1FB" stroke="#163A5F" stroke-width="2"/>
+<text x="280" y="79" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#163A5F">Identify</text>
+<text x="280" y="95" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#163A5F">parameter</text>
+<text x="280" y="111" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#163A5F">instability</text>
+<line x1="350" y1="95" x2="402" y2="95" stroke="#4C9AFF" stroke-width="2.5"/><polygon points="402,89 402,101 412,95" fill="#4C9AFF"/>
+<rect x="410" y="50" width="140" height="90" rx="12" fill="#163A5F" stroke="#163A5F" stroke-width="2"/>
+<text x="480" y="87" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#FFFFFF">Population-</text>
+<text x="480" y="103" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#FFFFFF">DTI-INR</text>
+<line x1="550" y1="95" x2="602" y2="95" stroke="#4C9AFF" stroke-width="2.5"/><polygon points="602,89 602,101 612,95" fill="#4C9AFF"/>
+<rect x="610" y="50" width="140" height="90" rx="12" fill="#E8F1FB" stroke="#163A5F" stroke-width="2"/>
+<text x="680" y="87" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#163A5F">Unseen subject</text>
+<text x="680" y="103" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#163A5F">validation</text>
+<line x1="750" y1="95" x2="802" y2="95" stroke="#4C9AFF" stroke-width="2.5"/><polygon points="802,89 802,101 812,95" fill="#4C9AFF"/>
+<rect x="810" y="50" width="140" height="90" rx="12" fill="#E8F1FB" stroke="#163A5F" stroke-width="2"/>
+<text x="880" y="87" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#163A5F">DKI</text>
+<text x="880" y="103" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#163A5F">extension</text>
+</svg>

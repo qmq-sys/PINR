@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420">
+<rect width="360" height="420" fill="#FFFFFF"/>
+<rect x="40" y="30" width="280" height="58" rx="10" fill="#E8F1FB" stroke="#163A5F" stroke-width="2"/><text x="180" y="66" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#163A5F">Sparse sampling</text>
+
+  <line x1="180" y1="88" x2="180" y2="117" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="174,115 186,115 180,125" fill="#4C9AFF"/>
+<rect x="40" y="125" width="280" height="58" rx="10" fill="#FFFFFF" stroke="#163A5F" stroke-width="2"/><text x="180" y="161" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#163A5F">Signal uncertainty</text>
+
+  <line x1="180" y1="183" x2="180" y2="212" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="174,210 186,210 180,220" fill="#4C9AFF"/>
+<rect x="40" y="220" width="280" height="58" rx="10" fill="#FFFFFF" stroke="#163A5F" stroke-width="2"/><text x="180" y="256" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#163A5F">Tensor ambiguity</text>
+
+  <line x1="180" y1="278" x2="180" y2="307" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="174,305 186,305 180,315" fill="#4C9AFF"/>
+<rect x="40" y="315" width="280" height="58" rx="10" fill="#163A5F" stroke="#163A5F" stroke-width="2"/><text x="180" y="351" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#FFFFFF">Parameter instability</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="420" viewBox="0 0 700 420">
+  <rect width="700" height="420" fill="#FFFFFF"/>
+  <rect x="200" y="30" width="300" height="50" rx="8" fill="#E8F1FB" stroke="#163A5F" stroke-width="2"/>
+  <text x="350" y="62" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#163A5F">Observed DWI</text>
+  <line x1="350" y1="80" x2="350" y2="110" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="344,110 356,110 350,120" fill="#4C9AFF"/>
+  <rect x="180" y="122" width="340" height="55" rx="8" fill="#163A5F" stroke="#163A5F" stroke-width="2"/>
+  <text x="350" y="156" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#FFFFFF">Population-DTI-INR (θ + z_s)</text>
+  <line x1="350" y1="177" x2="350" y2="207" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="344,207 356,207 350,217" fill="#4C9AFF"/>
+  <rect x="200" y="220" width="300" height="50" rx="8" fill="#FFFFFF" stroke="#163A5F" stroke-width="2"/>
+  <text x="350" y="252" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#163A5F">Predicted Signal</text>
+  <line x1="350" y1="270" x2="350" y2="300" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="344,300 356,300 350,310" fill="#4C9AFF"/>
+  <rect x="180" y="312" width="340" height="50" rx="8" fill="#E8F1FB" stroke="#163A5F" stroke-width="2"/>
+  <text x="350" y="344" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#163A5F">Loss: MSE(S_pred, S_obs)</text>
+  <text x="350" y="395" text-anchor="middle" font-family="Arial" font-size="13" fill="#666666">No GT tensor · No FA loss · Physics self-supervision only</text>
+</svg>

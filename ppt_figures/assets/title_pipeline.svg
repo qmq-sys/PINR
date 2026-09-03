@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="420" viewBox="0 0 320 420">
+<rect width="320" height="420" fill="#F7FAFC"/>
+
+  <rect x="50" y="40" width="220" height="52" rx="8" ry="8"
+        fill="#E8F1FB" stroke="#163A5F" stroke-width="2"/>
+  <text x="160.0" y="71.0" text-anchor="middle"
+        font-family="Arial, Microsoft YaHei, sans-serif" font-size="15"
+        font-weight="700" fill="#163A5F"><tspan x="160.0" dy="0">dMRI</tspan></text>
+
+  <line x1="160" y1="92" x2="160" y2="112" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="154,110 166,110 160,120" fill="#4C9AFF"/>
+
+  <rect x="50" y="120" width="220" height="52" rx="8" ry="8"
+        fill="#FFFFFF" stroke="#163A5F" stroke-width="2"/>
+  <text x="160.0" y="151.0" text-anchor="middle"
+        font-family="Arial, Microsoft YaHei, sans-serif" font-size="15"
+        font-weight="700" fill="#163A5F"><tspan x="160.0" dy="0">INR</tspan></text>
+
+  <line x1="160" y1="172" x2="160" y2="192" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="154,190 166,190 160,200" fill="#4C9AFF"/>
+
+  <rect x="50" y="200" width="220" height="52" rx="8" ry="8"
+        fill="#FFFFFF" stroke="#163A5F" stroke-width="2"/>
+  <text x="160.0" y="231.0" text-anchor="middle"
+        font-family="Arial, Microsoft YaHei, sans-serif" font-size="15"
+        font-weight="700" fill="#163A5F"><tspan x="160.0" dy="0">DTI parameters</tspan></text>
+
+  <line x1="160" y1="252" x2="160" y2="272" stroke="#4C9AFF" stroke-width="2.5"/>
+  <polygon points="154,270 166,270 160,280" fill="#4C9AFF"/>
+
+  <rect x="50" y="280" width="220" height="52" rx="8" ry="8"
+        fill="#E8F1FB" stroke="#163A5F" stroke-width="2"/>
+  <text x="160.0" y="311.0" text-anchor="middle"
+        font-family="Arial, Microsoft YaHei, sans-serif" font-size="15"
+        font-weight="700" fill="#163A5F"><tspan x="160.0" dy="0">Microstructure</tspan></text>
+</svg>
